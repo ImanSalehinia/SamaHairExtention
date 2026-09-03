@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 import './Footer.css';
 
 export default function Footer() {
@@ -8,8 +9,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__top container">
         <div className="footer__brand">
-          <span className="footer__logo-name">Sama</span>
-          <span className="footer__logo-sub">Hair Extensions</span>
+          <img src={logo} alt="Sama Hair Extensions" className="footer__logo-img" />
           <p className="footer__tagline">Transforming hair, boosting confidence.<br />Expert extensions in the UK.</p>
         </div>
 

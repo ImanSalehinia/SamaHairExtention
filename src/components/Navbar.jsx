@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -18,8 +19,7 @@ export default function Navbar() {
     <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
         <Link to="/" className="navbar__logo" onClick={closeMenu}>
-          <span className="navbar__logo-name">Sama</span>
-          <span className="navbar__logo-sub">Hair Extensions</span>
+          <img src={logo} alt="Sama Hair Extensions" className="navbar__logo-img" />
         </Link>
 
         <nav className={`navbar__nav${menuOpen ? ' navbar__nav--open' : ''}`}>
