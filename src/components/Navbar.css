@@ -27,12 +27,8 @@
 }
 
 .navbar__logo-img {
-  height: 52px;
+  height: 72px;
   width: auto;
-  padding: 6px 14px;
-  background: var(--ivory);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
 }
 
 .navbar__nav {
