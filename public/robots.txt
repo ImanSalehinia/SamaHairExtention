@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samahair.co.uk/sitemap.xml

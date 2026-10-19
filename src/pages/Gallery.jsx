@@ -32,6 +32,8 @@ export default function Gallery() {
       <Helmet>
         <title>Gallery | Sama Hair Extensions UK</title>
         <meta name="description" content="Browse Sama's portfolio of hair extension transformations — tape-in, micro ring, weft, colour and before & after results." />
+        <link rel="canonical" href="https://samahair.co.uk/gallery" />
+        <meta property="og:url" content="https://samahair.co.uk/gallery" />
       </Helmet>
 
       {/* PAGE HEADER */}

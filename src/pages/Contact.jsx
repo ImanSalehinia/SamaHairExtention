@@ -51,6 +51,8 @@ export default function Contact() {
       <Helmet>
         <title>Book Appointment | Sama Hair Extensions UK</title>
         <meta name="description" content="Book your hair extension appointment with Sama. Get in touch for a free consultation or to reserve your slot." />
+        <link rel="canonical" href="https://samahair.co.uk/contact" />
+        <meta property="og:url" content="https://samahair.co.uk/contact" />
       </Helmet>
 
       {/* PAGE HEADER */}
@@ -84,7 +86,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact-info__label">Phone / WhatsApp</span>
-                  <a href="tel:+447000000000" className="contact-info__value">+44 700 000 0000</a>
+                  <a href="tel:+447472113443" className="contact-info__value">+44 7472 113443</a>
                 </div>
               </div>
 
@@ -97,7 +99,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact-info__label">Email</span>
-                  <a href="mailto:hello@samahairextensions.co.uk" className="contact-info__value">hello@samahairextensions.co.uk</a>
+                  <a href="mailto:samahairextensions@gmail.com" className="contact-info__value">samahairextensions@gmail.com</a>
                 </div>
               </div>
 
@@ -111,7 +113,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact-info__label">Instagram</span>
-                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="contact-info__value">@samahairextensions</a>
+                  <a href="https://instagram.com/samahairextensionss" target="_blank" rel="noreferrer" className="contact-info__value">@samahairextensionss</a>
                 </div>
               </div>
 
@@ -137,18 +139,6 @@ export default function Contact() {
                 <span>Saturday</span><span>9:00am – 5:00pm</span>
                 <span>Sunday</span><span>By appointment</span>
               </div>
-            </div>
-
-            <div className="contact-info__booking">
-              <p>Prefer to book online directly?</p>
-              <a
-                href="https://www.fresha.com"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-gold"
-              >
-                Book via Fresha
-              </a>
             </div>
           </aside>
 

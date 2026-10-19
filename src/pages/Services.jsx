@@ -84,6 +84,8 @@ export default function Services() {
       <Helmet>
         <title>Services & Pricing | Sama Hair Extensions UK</title>
         <meta name="description" content="Tape-in, micro ring, nano ring, weft and clip-in hair extensions. Transparent pricing and full details from Sama Hair Extensions UK." />
+        <link rel="canonical" href="https://samahair.co.uk/services" />
+        <meta property="og:url" content="https://samahair.co.uk/services" />
       </Helmet>
 
       {/* PAGE HEADER */}

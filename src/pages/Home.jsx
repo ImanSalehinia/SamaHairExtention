@@ -57,6 +57,42 @@ export default function Home() {
       <Helmet>
         <title>Sama Hair Extensions | Premium Hair Specialist UK</title>
         <meta name="description" content="Transform your look with Sama, a premium hair extension specialist in the UK with 3+ years of experience. Tape-in, micro ring, weft and more." />
+        <link rel="canonical" href="https://samahair.co.uk/" />
+        <meta property="og:url" content="https://samahair.co.uk/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HairSalon',
+            name: 'Sama Hair Extensions',
+            image: 'https://samahair.co.uk/og-image.jpg',
+            url: 'https://samahair.co.uk/',
+            telephone: '+44-7472-113443',
+            email: 'samahairextensions@gmail.com',
+            priceRange: '££',
+            areaServed: 'GB',
+            address: {
+              '@type': 'PostalAddress',
+              addressCountry: 'GB',
+            },
+            openingHoursSpecification: [
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                opens: '09:00',
+                closes: '19:00',
+              },
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: 'Saturday',
+                opens: '09:00',
+                closes: '17:00',
+              },
+            ],
+            sameAs: [
+              'https://instagram.com/samahairextensionss',
+            ],
+          })}
+        </script>
       </Helmet>
 
       {/* HERO */}
