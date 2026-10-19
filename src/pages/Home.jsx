@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import aboutImg from '../assets/about.jpg';
 import './Home.css';
 
 const stats = [
@@ -99,7 +100,7 @@ export default function Home() {
         <div className="container about__grid">
           <div className="about__image-wrap">
             <img
-              src=".\galery\SamaProfile.jpeg"
+              src={aboutImg}
               alt="Sama – Hair Extension Specialist"
               className="about__image"
             />
