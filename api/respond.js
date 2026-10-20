@@ -47,7 +47,7 @@ export default async function handler(req, res) {
     ` : `
       <h2 style="color:#C9A84C;margin:0 0 16px;">About your booking request</h2>
       <p>Unfortunately the requested slot (<strong>${booking.date} at ${booking.time}</strong>) isn't available.</p>
-      <p>Please get in touch so we can find a time that works — reply to this email or message on WhatsApp.</p>
+      <p>Our team will contact you shortly to arrange your consultation at a time that works best for you.</p>
     `);
 
     await sendMail({
