@@ -92,7 +92,7 @@ export default function Home() {
               },
             ],
             sameAs: [
-              'https://instagram.com/samahairextensionss',
+              'https://instagram.com/Sama_hairextensionss',
             ],
           })}
         </script>

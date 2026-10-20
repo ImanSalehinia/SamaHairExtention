@@ -140,7 +140,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact-info__label">Instagram</span>
-                  <a href="https://instagram.com/samahairextensionss" target="_blank" rel="noreferrer" className="contact-info__value">@samahairextensionss</a>
+                  <a href="https://instagram.com/Sama_hairextensionss" target="_blank" rel="noreferrer" className="contact-info__value">@Sama_hairextensionss</a>
                 </div>
               </div>
 
