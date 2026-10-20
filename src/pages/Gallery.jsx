@@ -1,23 +1,51 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import closeupMicroring from '../assets/gallery/closeup-microring.jpg';
+import hairrootTapein from '../assets/gallery/hairroot-tapein.jpg';
+import redStrandDetail from '../assets/gallery/red-strand-detail.jpg';
+import blondeSectioning from '../assets/gallery/blonde-sectioning.jpg';
+import balayageBlend from '../assets/gallery/balayage-blend.jpg';
+import coldfusionApplication from '../assets/gallery/coldfusion-application.jpg';
+import multitoneBonds from '../assets/gallery/multitone-bonds.jpg';
+import wavyBlondeFinish from '../assets/gallery/wavy-blonde-finish.jpg';
+import bondedTipsFan from '../assets/gallery/bonded-tips-fan.jpg';
+import goldenBrownTransformation from '../assets/gallery/golden-brown-transformation.jpg';
+import pixieToLongDark from '../assets/gallery/pixie-to-long-dark.jpg';
+import vividRedColour from '../assets/gallery/vivid-red-colour.jpg';
+import longStraightTransformation from '../assets/gallery/long-straight-transformation.jpg';
+import wavyBrunetteTransformation from '../assets/gallery/wavy-brunette-transformation.jpg';
+import longWavyBlondeTransformation from '../assets/gallery/long-wavy-blonde-transformation.jpg';
+import bobToLongBalayage from '../assets/gallery/bob-to-long-balayage.jpg';
+import pixieToCurlyLong from '../assets/gallery/pixie-to-curly-long.jpg';
+import shortToLongWavy from '../assets/gallery/short-to-long-wavy.jpg';
+import straightBlondeLength from '../assets/gallery/straight-blonde-length.jpg';
+import vividRedLongStraight from '../assets/gallery/vivid-red-long-straight.jpg';
 import './Gallery.css';
 
 const filters = ['All', 'Before & After', 'Tape-In', 'Micro Ring', 'Weft', 'Colour'];
 
 const galleryItems = [
-  { id: 1,  category: 'Before & After', type: 'image', label: 'Tape-In Transformation',   desc: 'Added length & volume',    img: 'https://loremflickr.com/600/800/hair-extensions,hair?lock=1' },
-  { id: 2,  category: 'Tape-In',        type: 'image', label: 'Blonde Tape-In Extensions', desc: 'Natural seamless blend',   img: 'https://loremflickr.com/600/800/hair-extensions,blonde?lock=2' },
-  { id: 3,  category: 'Micro Ring',     type: 'image', label: 'Micro Ring Results',         desc: 'No heat, no damage',      img: 'https://loremflickr.com/600/800/hair-extensions,hairstyle?lock=3' },
-  { id: 4,  category: 'Before & After', type: 'image', label: 'Volume Boost',               desc: 'From thin to full',       img: 'https://loremflickr.com/600/800/hair,woman,beauty?lock=4' },
-  { id: 5,  category: 'Weft',           type: 'image', label: 'Weft Installation',          desc: 'Full, luscious lengths',  img: 'https://loremflickr.com/600/800/hair-extensions,long-hair?lock=5' },
-  { id: 6,  category: 'Colour',         type: 'image', label: 'Balayage Extensions',        desc: 'Sun-kissed highlights',   img: 'https://loremflickr.com/600/800/balayage,hair,colour?lock=6' },
-  { id: 7,  category: 'Tape-In',        type: 'image', label: 'Dark Tape-In Extensions',    desc: 'Rich, deep brunette',     img: 'https://loremflickr.com/600/800/hair,brunette,extensions?lock=7' },
-  { id: 8,  category: 'Before & After', type: 'image', label: 'Complete Makeover',          desc: 'Stunning transformation', img: 'https://loremflickr.com/600/800/hairstyle,hair,woman?lock=8' },
-  { id: 9,  category: 'Micro Ring',     type: 'image', label: 'Micro Ring – Brunette',      desc: 'Invisible bond',          img: 'https://loremflickr.com/600/800/hair,long,extensions?lock=9' },
-  { id: 10, category: 'Colour',         type: 'image', label: 'Ombre Extensions',           desc: 'Seamless colour fade',    img: 'https://loremflickr.com/600/800/ombre,hair,colour?lock=10' },
-  { id: 11, category: 'Weft',           type: 'video', label: 'Weft Installation Video',    desc: 'Watch the process',       img: 'https://loremflickr.com/900/506/hair-extensions,salon?lock=11' },
-  { id: 12, category: 'Before & After', type: 'video', label: 'Transformation Video',       desc: '60 second reveal',        img: 'https://loremflickr.com/900/506/hair,beauty,woman?lock=12' },
+  { id: 1,  category: 'Micro Ring',     label: 'Micro Ring Application',       desc: 'Precision bead placement, no damage',    img: closeupMicroring },
+  { id: 2,  category: 'Tape-In',        label: 'Seamless Root Blend',          desc: 'Natural-looking root application',       img: hairrootTapein },
+  { id: 3,  category: 'Colour',         label: 'Vivid Red Strand Detail',      desc: 'Custom colour-matched extensions',       img: redStrandDetail },
+  { id: 4,  category: 'Micro Ring',     label: 'Blonde Micro Ring Sectioning', desc: 'Precise placement for a natural fall',   img: blondeSectioning },
+  { id: 5,  category: 'Colour',         label: 'Balayage Root Blend',          desc: 'Seamless dark-to-blonde transition',     img: balayageBlend },
+  { id: 6,  category: 'Tape-In',        label: 'Cold Fusion Application',      desc: 'Damage-free bonding technique',          img: coldfusionApplication },
+  { id: 7,  category: 'Micro Ring',     label: 'Multi-Tone Bond Detail',       desc: 'Custom blended colour extensions',       img: multitoneBonds },
+  { id: 8,  category: 'Weft',           label: 'Wavy Blonde Finish',           desc: 'Full, voluminous length',                img: wavyBlondeFinish },
+  { id: 9,  category: 'Micro Ring',     label: 'Bonded Tip Detail',            desc: 'Multi-tone micro ring extensions',       img: bondedTipsFan },
+  { id: 10, category: 'Before & After', label: 'Golden Brown Transformation',  desc: 'Added length and dimension',             img: goldenBrownTransformation },
+  { id: 11, category: 'Before & After', label: 'Pixie to Long Transformation', desc: 'Dramatic length change',                 img: pixieToLongDark },
+  { id: 12, category: 'Colour',         label: 'Vivid Red Makeover',           desc: 'Bold colour transformation',             img: vividRedColour },
+  { id: 13, category: 'Before & After', label: 'Sleek Length Transformation',  desc: 'Silky straight extensions',              img: longStraightTransformation },
+  { id: 14, category: 'Before & After', label: 'Wavy Brunette Transformation', desc: 'Natural volume and waves',               img: wavyBrunetteTransformation },
+  { id: 15, category: 'Before & After', label: 'Long Wavy Blonde Transformation', desc: 'Beachy waves and length',             img: longWavyBlondeTransformation },
+  { id: 16, category: 'Before & After', label: 'Bob to Long Balayage',         desc: 'From bob to flowing length',             img: bobToLongBalayage },
+  { id: 17, category: 'Before & After', label: 'Pixie to Curly Length',        desc: 'Full curly transformation',              img: pixieToCurlyLong },
+  { id: 18, category: 'Before & After', label: 'Short to Long Wavy',           desc: 'Natural wavy extensions',                img: shortToLongWavy },
+  { id: 19, category: 'Before & After', label: 'Blonde Length Boost',          desc: 'Extra length and fullness',              img: straightBlondeLength },
+  { id: 20, category: 'Colour',         label: 'Vivid Red, Long & Straight',   desc: 'Sleek bold red finish',                  img: vividRedLongStraight },
 ];
 
 export default function Gallery() {
@@ -65,7 +93,7 @@ export default function Gallery() {
 
           <div className="gallery-grid">
             {filtered.map(item => (
-              <div key={item.id} className={`gallery-item${item.type === 'video' ? ' gallery-item--video' : ''}`}>
+              <div key={item.id} className="gallery-item">
                 <div className="gallery-item__thumb">
                   <img
                     src={item.img}
@@ -73,13 +101,6 @@ export default function Gallery() {
                     className="gallery-item__img"
                     loading="lazy"
                   />
-                  {item.type === 'video' && (
-                    <div className="gallery-item__play-btn">
-                      <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  )}
                   <div className="gallery-item__overlay">
                     <div className="gallery-item__info">
                       <h3>{item.label}</h3>
