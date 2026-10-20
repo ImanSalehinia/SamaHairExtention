@@ -11,15 +11,26 @@ const serviceOptions = [
   'Not Sure – Free Consultation',
 ];
 
+const timeOptions = [
+  '09:00', '10:00', '11:00', '12:00', '13:00',
+  '14:00', '15:00', '16:00', '17:00', '18:00',
+];
+
+const today = new Date().toISOString().split('T')[0];
+
 export default function Contact() {
   const [form, setForm] = useState({
     name: '',
     email: '',
     phone: '',
     service: '',
+    date: '',
+    time: '',
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   const [errors, setErrors] = useState({});
 
   const validate = () => {
@@ -27,6 +38,8 @@ export default function Contact() {
     if (!form.name.trim()) e.name = 'Please enter your name.';
     if (!form.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) e.email = 'Please enter a valid email address.';
     if (!form.service) e.service = 'Please select a service.';
+    if (!form.date) e.date = 'Please pick a date.';
+    if (!form.time) e.time = 'Please pick a time.';
     return e;
   };
 
@@ -36,14 +49,28 @@ export default function Contact() {
     if (errors[name]) setErrors(er => ({ ...er, [name]: '' }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length) {
       setErrors(errs);
       return;
     }
-    setSubmitted(true);
+    setSubmitError('');
+    setSubmitting(true);
+    try {
+      const res = await fetch('/api/book', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error('Request failed');
+      setSubmitted(true);
+    } catch {
+      setSubmitError("Something went wrong sending your request — please try again, or contact Sama directly by phone or email.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -148,9 +175,9 @@ export default function Contact() {
               <div className="form-success">
                 <div className="form-success__icon">✓</div>
                 <h2>Thank You, {form.name}!</h2>
-                <p>Your enquiry has been received. I'll be in touch within 24 hours to confirm your appointment.</p>
-                <button className="btn-outline" onClick={() => { setSubmitted(false); setForm({ name:'',email:'',phone:'',service:'',message:'' }); }}>
-                  Send Another Message
+                <p>Your booking request for <strong>{form.date} at {form.time}</strong> has been sent. You'll receive a confirmation email as soon as Sama approves it.</p>
+                <button className="btn-outline" onClick={() => { setSubmitted(false); setForm({ name:'',email:'',phone:'',service:'',date:'',time:'',message:'' }); }}>
+                  Send Another Request
                 </button>
               </div>
             ) : (
@@ -217,24 +244,56 @@ export default function Contact() {
                   </div>
                 </div>
 
+                <div className="form-row">
+                  <div className={`form-group${errors.date ? ' form-group--error' : ''}`}>
+                    <label htmlFor="date">Preferred Date *</label>
+                    <input
+                      id="date"
+                      name="date"
+                      type="date"
+                      min={today}
+                      value={form.date}
+                      onChange={handleChange}
+                    />
+                    {errors.date && <span className="form-error">{errors.date}</span>}
+                  </div>
+                  <div className={`form-group${errors.time ? ' form-group--error' : ''}`}>
+                    <label htmlFor="time">Preferred Time *</label>
+                    <select
+                      id="time"
+                      name="time"
+                      value={form.time}
+                      onChange={handleChange}
+                    >
+                      <option value="">Select a time…</option>
+                      {timeOptions.map(t => (
+                        <option key={t} value={t}>{t}</option>
+                      ))}
+                    </select>
+                    {errors.time && <span className="form-error">{errors.time}</span>}
+                  </div>
+                </div>
+
                 <div className="form-group">
                   <label htmlFor="message">Message / Additional Notes</label>
                   <textarea
                     id="message"
                     name="message"
                     rows={5}
-                    placeholder="Tell me about your hair goals, preferred dates, or any questions you have…"
+                    placeholder="Tell me about your hair goals or any questions you have…"
                     value={form.message}
                     onChange={handleChange}
                   />
                 </div>
 
                 <p className="form-privacy">
-                  Your details are kept private and only used to respond to your enquiry.
+                  Your details are kept private and only used to respond to your enquiry. Your requested slot isn't confirmed until Sama approves it by email.
                 </p>
 
-                <button type="submit" className="btn-gold form-submit">
-                  Send Enquiry
+                {submitError && <p className="form-error form-error--submit">{submitError}</p>}
+
+                <button type="submit" className="btn-gold form-submit" disabled={submitting}>
+                  {submitting ? 'Sending…' : 'Request Appointment'}
                 </button>
               </form>
             )}

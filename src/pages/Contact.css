@@ -212,6 +212,16 @@ a.contact-info__value:hover {
   color: #e55353;
 }
 
+.form-error--submit {
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .form-group textarea {
   resize: vertical;
   min-height: 120px;
