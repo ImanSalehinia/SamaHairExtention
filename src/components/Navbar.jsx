@@ -26,6 +26,7 @@ export default function Navbar() {
           <NavLink to="/" end onClick={closeMenu}>Home</NavLink>
           <NavLink to="/gallery" onClick={closeMenu}>Gallery</NavLink>
           <NavLink to="/services" onClick={closeMenu}>Services</NavLink>
+          <NavLink to="/hair-extensions-london" onClick={closeMenu}>Areas</NavLink>
           <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
           <Link to="/contact" className="btn-gold navbar__cta" onClick={closeMenu}>Book Now</Link>
         </nav>

@@ -69,7 +69,10 @@ export default function Home() {
             telephone: '+44-7472-113443',
             email: 'samahairextensions@gmail.com',
             priceRange: '££',
-            areaServed: 'GB',
+            areaServed: [
+              'Brentford', 'Chiswick', 'Ealing', 'Isleworth', 'Kew',
+              'Richmond upon Thames', 'Hounslow', 'Osterley', 'Syon', 'Hammersmith',
+            ].map(name => ({ '@type': 'Place', name })),
             address: {
               '@type': 'PostalAddress',
               streetAddress: 'Brentford High Street',
