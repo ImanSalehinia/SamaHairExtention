@@ -153,8 +153,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact-info__label">Location</span>
-                  <span className="contact-info__value">United Kingdom</span>
-                  <span className="contact-info__sub">Exact address provided upon booking</span>
+                  <span className="contact-info__value">Brentford High Street, London</span>
+                  <span className="contact-info__sub">Near Brentford Lock — exact address provided upon booking</span>
                 </div>
               </div>
             </div>

@@ -72,6 +72,9 @@ export default function Home() {
             areaServed: 'GB',
             address: {
               '@type': 'PostalAddress',
+              streetAddress: 'Brentford High Street',
+              addressLocality: 'Brentford',
+              addressRegion: 'London',
               addressCountry: 'GB',
             },
             openingHoursSpecification: [
