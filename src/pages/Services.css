@@ -1,7 +1,5 @@
 .services-header {
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1208 100%);
-  background-image:
-    radial-gradient(ellipse at 70% 60%, rgba(201,168,76,0.1) 0%, transparent 60%);
+  background: linear-gradient(135deg, #F8EEE7 0%, #F3E0D7 60%, #E8C9B8 100%);
 }
 
 /* SERVICES SECTION */
@@ -18,7 +16,7 @@
 
 .service-card {
   background: var(--dark-2);
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(73,53,45,0.08);
   padding: 36px 32px 32px;
   position: relative;
   display: flex;
@@ -58,8 +56,16 @@
 
 .service-card__header h2 {
   font-size: 1.25rem;
-  color: var(--cream);
   flex: 1;
+}
+
+.service-card__header h2 a {
+  color: var(--cream);
+  transition: color 0.3s;
+}
+
+.service-card__header h2 a:hover {
+  color: var(--rose);
 }
 
 .service-card__price {
@@ -81,8 +87,8 @@
   display: flex;
   gap: 20px;
   padding: 16px 0;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(73,53,45,0.1);
+  border-bottom: 1px solid rgba(73,53,45,0.1);
   margin-bottom: 20px;
 }
 
@@ -130,7 +136,7 @@
 
 .service-card__includes li {
   font-size: 0.85rem;
-  color: rgba(245,240,235,0.75);
+  color: var(--text-muted);
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -143,9 +149,24 @@
   margin-top: 2px;
 }
 
-.service-card__cta {
-  text-align: center;
+.service-card__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-top: auto;
+  text-align: center;
+}
+
+.service-card__more {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--gold);
+  transition: color 0.3s;
+}
+
+.service-card__more:hover {
+  color: var(--rose);
 }
 
 /* FAQ */
@@ -189,17 +210,18 @@
 .services-cta {
   padding: 80px 0;
   background: var(--black);
-  border-top: 1px solid rgba(201,168,76,0.1);
+  border-top: 1px solid rgba(197,161,109,0.2);
   text-align: center;
 }
 
 .services-cta__content h2 {
   font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: #F8EEE7;
   margin-bottom: 16px;
 }
 
 .services-cta__content p {
-  color: var(--text-muted);
+  color: rgba(248,238,231,0.75);
   font-size: 1rem;
   max-width: 500px;
   margin: 0 auto 32px;

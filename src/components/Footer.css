@@ -1,6 +1,6 @@
 .footer {
-  background: var(--black);
-  border-top: 1px solid rgba(201,168,76,0.2);
+  background: #49352D;
+  border-top: 1px solid rgba(197,161,109,0.25);
   margin-top: auto;
 }
 
@@ -12,14 +12,14 @@
 }
 
 .footer__logo-img {
-  height: 200px;
+  height: 150px;
   width: auto;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .footer__tagline {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: rgba(248,238,231,0.7);
   line-height: 1.8;
 }
 
@@ -30,7 +30,7 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #C5A16D;
   margin-bottom: 20px;
 }
 
@@ -43,7 +43,7 @@
 .footer__links nav a,
 .footer__contact a {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: rgba(248,238,231,0.7);
   transition: color 0.3s;
   display: block;
   margin-bottom: 8px;
@@ -51,7 +51,7 @@
 
 .footer__links nav a:hover,
 .footer__contact a:hover {
-  color: var(--gold);
+  color: #D99A94;
 }
 
 .footer__insta {
@@ -62,7 +62,7 @@
 }
 
 .footer__bottom {
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(248,238,231,0.1);
   padding: 20px 24px;
   display: flex;
   justify-content: space-between;
@@ -73,7 +73,7 @@
 
 .footer__bottom p {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: rgba(248,238,231,0.6);
 }
 
 @media (max-width: 768px) {

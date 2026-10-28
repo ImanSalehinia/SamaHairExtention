@@ -1,8 +1,6 @@
 /* HEADER */
 .locations-header {
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1208 100%);
-  background-image:
-    radial-gradient(ellipse at 50% 80%, rgba(201,168,76,0.1) 0%, transparent 60%);
+  background: linear-gradient(135deg, #F8EEE7 0%, #F3E0D7 60%, #E8C9B8 100%);
 }
 
 .locations-header .page-header__content p {
@@ -84,7 +82,7 @@
 }
 
 .locations-gallery__caption span {
-  color: var(--cream);
+  color: #F8EEE7;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -108,7 +106,7 @@
 
 .locations-methods__card {
   background: var(--dark-2);
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(73,53,45,0.1);
   border-radius: var(--radius);
   padding: 28px 24px;
 }

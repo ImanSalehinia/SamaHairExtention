@@ -1,59 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { services } from '../data/services';
 import './Services.css';
-
-const services = [
-  {
-    name: 'Tape-In Extensions',
-    price: 'From £180',
-    duration: '2–3 hours',
-    maintenanceEvery: '6–8 weeks',
-    desc: 'The most popular method — ultra-thin wefts with medical-grade adhesive tape. Lightweight, invisible, and incredibly natural looking.',
-    bestFor: 'Adding length & volume with minimal damage',
-    includes: ['Consultation & colour match', 'Full application', 'Styling', 'Aftercare kit & guide'],
-    tag: 'Most Popular',
-  },
-  {
-    name: 'Micro Ring Extensions',
-    price: 'From £250',
-    duration: '3–4 hours',
-    maintenanceEvery: '8–10 weeks',
-    desc: 'Individual strands attached with tiny metal rings — no heat, no glue. Perfect for long-term wear with maximum hair health.',
-    bestFor: 'Long-term wear & fine hair types',
-    includes: ['Full consultation', 'Strand-by-strand application', 'Styling finish', 'Detailed aftercare advice'],
-    tag: null,
-  },
-  {
-    name: 'Nano Ring Extensions',
-    price: 'From £280',
-    duration: '3–4 hours',
-    maintenanceEvery: '8–12 weeks',
-    desc: 'The smallest, most discreet extension method available. Nano rings are half the size of micro rings for the most invisible result.',
-    bestFor: 'Very fine hair & maximum discretion',
-    includes: ['In-depth consultation', 'Nano ring application', 'Blow-dry & styling', 'Aftercare pack'],
-    tag: 'Premium',
-  },
-  {
-    name: 'Weft Extensions',
-    price: 'From £220',
-    duration: '2–3 hours',
-    maintenanceEvery: '6–8 weeks',
-    desc: 'Hand-tied or machine wefts sewn close to the scalp for dramatic volume and length. A salon favourite for transformations.',
-    bestFor: 'Dramatic volume & length transformations',
-    includes: ['Consultation', 'Weft fitting & sewing', 'Full blow-dry', 'Aftercare guidance'],
-    tag: null,
-  },
-  {
-    name: 'Clip-In Extensions',
-    price: 'From £60',
-    duration: '30 min lesson',
-    maintenanceEvery: 'On demand',
-    desc: 'The flexible, non-committal option — clip in for special occasions or daily use. I\'ll teach you how to apply and style them yourself.',
-    bestFor: 'Occasional wear & beginners',
-    includes: ['Full clip-in set', 'Application lesson', 'Styling tips', 'Matching colour guide'],
-    tag: null,
-  },
-];
 
 const faqs = [
   {
@@ -103,10 +51,12 @@ export default function Services() {
         <div className="container">
           <div className="services-grid">
             {services.map(s => (
-              <article key={s.name} className={`service-card${s.tag ? ' service-card--featured' : ''}`}>
+              <article key={s.slug} className={`service-card${s.tag ? ' service-card--featured' : ''}`}>
                 {s.tag && <div className="service-card__tag">{s.tag}</div>}
                 <div className="service-card__header">
-                  <h2>{s.name}</h2>
+                  <h2>
+                    <Link to={`/services/${s.slug}`}>{s.name}</Link>
+                  </h2>
                   <span className="service-card__price">{s.price}</span>
                 </div>
                 <p className="service-card__desc">{s.desc}</p>
@@ -130,7 +80,10 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-                <Link to="/contact" className="btn-outline service-card__cta">Book This Service</Link>
+                <div className="service-card__actions">
+                  <Link to={`/services/${s.slug}`} className="service-card__more">More Info →</Link>
+                  <Link to="/contact" className="btn-outline service-card__cta">Book This Service</Link>
+                </div>
               </article>
             ))}
           </div>

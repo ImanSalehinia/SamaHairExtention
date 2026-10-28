@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-light.png';
 import './Footer.css';
 
 export default function Footer() {
@@ -17,6 +17,7 @@ export default function Footer() {
           <h4>Quick Links</h4>
           <nav>
             <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
             <Link to="/gallery">Gallery</Link>
             <Link to="/services">Services &amp; Pricing</Link>
             <Link to="/hair-extensions-london">Areas We Cover</Link>
