@@ -146,6 +146,18 @@
   margin-bottom: 0;
 }
 
+.about-braids__tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--rose) !important;
+  margin-bottom: 24px !important;
+}
+
+.about-braids__alt .luxe-btn-primary {
+  display: inline-block;
+}
+
 /* QUALITY */
 .about-quality {
   background: var(--dark);

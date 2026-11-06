@@ -138,13 +138,21 @@ export default function Locations() {
       <section className="page-header locations-header">
         <div className="page-header__overlay" />
         <div className="container page-header__content">
-          <span className="section-label">Serving West London</span>
-          <h1 className="section-title">Hair Extensions Across <span>West London</span></h1>
+          <span className="section-label">Serving West &amp; Greater London</span>
+          <h1 className="section-title">Hair Extensions in West London <span>&amp; Across London</span></h1>
           <p>
-            Based in Brentford, Sama Hair Extensions welcomes clients from Chiswick, Ealing, Isleworth,
-            Kew, Richmond, Hounslow, Osterley, Syon and Hammersmith — every method, every hair type,
-            every occasion.
+            Based on Brentford High Street, Sama Hair Extensions welcomes clients from Brentford,
+            Chiswick, Ealing, Isleworth, Hounslow, Kew, Richmond, Osterley, Syon and Hammersmith.
           </p>
+          <p>
+            Prefer to have your hair extensions fitted at home? We also offer a convenient mobile
+            hair extension service across London, bringing professional hair extension treatments to
+            you, so you can enjoy your dream hair without the hassle of long, tiring journeys across
+            the city. Mobile appointments are available for an additional travel fee, confirmed
+            before your booking.
+          </p>
+          <Link to="/contact" className="luxe-btn-primary">Book Your Free Consultation</Link>
+          <p className="locations-header__tagline">Beautiful hair, expert fitting and convenience tailored to you.</p>
         </div>
       </section>
 
@@ -152,19 +160,22 @@ export default function Locations() {
       <section className="locations-intro section-pad">
         <div className="container locations-intro__inner">
           <span className="section-label">About the Studio</span>
-          <h2 className="section-title">Your Local <span>Hair Extension Specialist</span></h2>
+          <h2 className="section-title">A Personal Approach to <span>Beautiful Hair</span></h2>
           <div className="divider" />
           <p>
-            Sama is a hair extension specialist with over 3 years of hands-on experience, working from
-            a private studio in Brentford, West London. Clients travel in from across the borough and
-            beyond for tape-in, micro ring, nano ring, weft and clip-in extensions — all fitted with
-            100% Remy human hair and a free consultation to match colour, texture and method to your
-            natural hair.
+            At Sama Hair Extensions, we believe every transformation starts with understanding your
+            hair and the look you want to achieve. With over three years of hands-on experience, we
+            take a personalised approach to help you find an extension method that complements your
+            natural hair, lifestyle and desired result.
           </p>
           <p>
-            Below is a look at real client work — close-up application detail and full before &amp; after
-            transformations — plus a breakdown of every method on offer and the West London areas
-            served from the Brentford studio.
+            From adding subtle volume to creating a fuller, longer look, attention to detail is at the
+            heart of every appointment. We focus on careful colour matching, considered placement and
+            seamless blending to create a finish that looks and feels natural.
+          </p>
+          <p>
+            Whether you&rsquo;re trying extensions for the first time or looking for a new method, we
+            provide individual guidance to help you make an informed choice for your hair.
           </p>
         </div>
       </section>

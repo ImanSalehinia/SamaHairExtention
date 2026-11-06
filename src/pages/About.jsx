@@ -9,19 +9,16 @@ const extensionTypes = [
   {
     name: 'Keratin Bond Hair Extensions',
     aka: 'K-Tip / U-Tip / Pre-Bonded',
-    text: 'Keratin bond extensions use individual strands attached with keratin-based bonds. They are a popular choice for clients looking for individual strand placement and natural movement.',
+    text: 'Individual strands of premium human hair are attached using small keratin bonds, creating a natural-looking finish with beautiful movement. Ideal for adding length and volume with discreet, strand-by-strand placement.',
   },
   {
-    name: 'Nano Ring Hair Extensions',
-    text: 'Nano ring extensions use small rings to attach individual extension strands to natural hair. They are designed for discreet placement without traditional adhesive or heat-fused bonds.',
-  },
-  {
-    name: 'Micro Ring and I-Tip Hair Extensions',
-    text: 'Micro ring, micro bead, micro link and I-Tip extensions use small rings or beads to secure individual strands. They offer another option for clients who prefer a strand-by-strand application method.',
+    name: 'Nano & Micro Ring Hair Extensions',
+    aka: 'Nano Rings / Micro Rings',
+    text: 'Individual hair extension strands are attached using small rings or beads, without glue or heat during application. A versatile method for adding natural-looking length and volume with discreet attachments.',
   },
   {
     name: 'Tape-In Hair Extensions',
-    text: 'Tape-in extensions use flat adhesive panels fitted around sections of natural hair. They are popular for adding length and volume with a relatively flat attachment profile.',
+    text: 'Lightweight hair wefts with adhesive panels are carefully applied to sections of your natural hair. A popular choice for adding length and volume with a flat, seamless finish.',
   },
   {
     name: 'Weft Hair Extensions',
@@ -33,7 +30,7 @@ const extensionTypes = [
   },
   {
     name: 'Clip-In Hair Extensions',
-    text: 'Clip-in extensions are removable hairpieces designed to add length or volume temporarily. They can be attached and removed at home without a permanent salon installation.',
+    text: 'A temporary and flexible option for adding instant length and volume. Clip-in extensions can be easily attached and removed, making them ideal for special occasions or occasional styling.',
   },
   {
     name: 'Halo Hair Extensions',
@@ -43,21 +40,6 @@ const extensionTypes = [
     name: 'Other Hair Extension Methods',
     text: 'Other methods include hand-tied wefts, machine wefts, genius wefts, flat-tip extensions, stick-tip extensions, micro-loop extensions and crochet-based installation techniques. The suitability of each method depends on its construction, fitting process and your individual hair needs.',
   },
-];
-
-const braidStyles = [
-  { name: 'Box Braids', text: 'Individual three-strand braids, often created using additional braiding hair.' },
-  { name: 'Knotless Braids', text: 'A variation of box braids that starts with natural hair before extension hair is gradually incorporated.' },
-  { name: 'Cornrows', text: 'Braids formed close to the scalp in straight lines or decorative patterns.' },
-  { name: 'Ghana Braids', text: 'Traditional feed-in braiding styles, often featuring larger or more defined cornrows.' },
-  { name: 'Fulani Braids', text: 'Decorative braiding styles commonly combining cornrows, individual braids and accessories.' },
-  { name: 'Senegalese Twists', text: 'Rope-like twists created by wrapping two strands of hair together.' },
-  { name: 'Marley Twists', text: 'Textured twists traditionally created with coarser-textured extension hair.' },
-  { name: 'Crochet Braids', text: 'A technique in which extension hair is attached to a braided foundation using a crochet tool.' },
-  { name: 'Faux Locs', text: 'Protective styles designed to create the appearance of locs using natural hair and, often, additional hair.' },
-  { name: 'Feed-In Braids', text: 'Braids created by gradually adding hair to build length or thickness.' },
-  { name: 'Goddess Braids', text: 'Larger, raised braids that can be styled in different patterns.' },
-  { name: 'Traditional Sew-In Weaves', text: 'Extension hair attached to a braided foundation using a needle and thread.' },
 ];
 
 const secondaryImage = galleryItems.find(g => g.id === 15).img;
@@ -135,41 +117,29 @@ export default function About() {
       <section className="about-braids section-pad">
         <div className="container">
           <div className="about-section__header">
-            <span className="section-label">Braids &amp; Protective Styles</span>
-            <h2 className="section-title">Traditional Braids <span>& Modern Alternatives</span></h2>
+            <span className="section-label">A New Way to Transform Your Hair</span>
+            <h2 className="section-title">Love Balayage, Highlights &amp; Blonde Hair? <span>Without the Bleach.</span></h2>
             <div className="divider centered" />
             <p className="about-section__intro">
-              Traditional braiding styles have a rich history and remain popular for their beauty,
-              versatility and cultural significance. Some clients also explore hair extensions, weaves
-              or alternative styling methods when they want a different way to achieve added length,
-              volume or a new look. Popular traditional braiding and protective hairstyles include:
+              Dreaming of lighter shades, beautiful highlights or a balayage look? You don&rsquo;t
+              always need to bleach or chemically colour your natural hair to achieve the look you
+              love.
             </p>
-          </div>
-          <div className="about-braids__grid">
-            {braidStyles.map(b => (
-              <div key={b.name} className="about-braids__card">
-                <h3>{b.name}</h3>
-                <p>{b.text}</p>
-              </div>
-            ))}
           </div>
 
           <div className="about-braids__alt">
-            <h3>Hair Extensions as an Alternative to Certain Braided Styles</h3>
             <p>
-              If you are considering a change from traditional braids, hair extensions may offer
-              another way to create length, volume and different hairstyles.
+              With premium 100% human hair extensions, you can add blonde, caramel, honey or
+              lighter-toned pieces to your natural hair, creating beautiful dimension, contrast and a
+              sun-kissed finish without chemically lightening your own hair.
             </p>
             <p>
-              For example, keratin bond, nano ring, tape-in and weft extensions can be considered by
-              clients looking for flowing, loose hairstyles rather than individual braids or twists.
-              Clip-in and halo extensions may also be suitable for temporary styling.
+              Whether you love subtle highlights, face-framing blonde pieces, a balayage-inspired
+              blend or a complete colour transformation, hair extensions offer a versatile way to
+              experiment with colour while keeping your natural hair colour untouched.
             </p>
-            <p>
-              However, hair extensions do not directly replace every braiding technique. The best
-              choice depends on the hairstyle you want, your natural hair condition, your lifestyle
-              and the amount of maintenance you prefer.
-            </p>
+            <p className="about-braids__tagline">Your dream colour. No bleach needed. Just beautiful hair.</p>
+            <Link to="/contact" className="luxe-btn-primary">Explore Hair Extension Services</Link>
           </div>
         </div>
       </section>

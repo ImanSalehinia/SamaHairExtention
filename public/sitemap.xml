@@ -21,22 +21,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://samahair.co.uk/services/keratin-bond</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samahair.co.uk/services/ring-extensions</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://samahair.co.uk/services/tape-in</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://samahair.co.uk/services/micro-ring</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://samahair.co.uk/services/nano-ring</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://samahair.co.uk/services/weft</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

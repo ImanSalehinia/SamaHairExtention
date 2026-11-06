@@ -4,7 +4,21 @@
 }
 
 .locations-header .page-header__content p {
-  max-width: 640px;
+  max-width: 680px;
+  margin-bottom: 20px;
+}
+
+.locations-header .page-header__content .luxe-btn-primary {
+  margin-top: 8px;
+}
+
+.locations-header__tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--cream) !important;
+  max-width: none !important;
+  margin: 20px auto 0 !important;
 }
 
 /* INTRO */

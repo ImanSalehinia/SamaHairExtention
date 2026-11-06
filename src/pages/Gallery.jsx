@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { galleryItems } from '../data/galleryItems';
 import './Gallery.css';
 
-const filters = ['All', 'Before & After', 'Tape-In', 'Micro Ring', 'Weft', 'Colour'];
+const filters = ['All Results', 'Before & After', 'Keratin Bond', 'Tape-In', 'Nano & Micro Ring', 'Hair Transformations'];
 
 export default function Gallery() {
-  const [active, setActive] = useState('All');
+  const [active, setActive] = useState('All Results');
 
-  const filtered = active === 'All'
+  const filtered = active === 'All Results'
     ? galleryItems
     : galleryItems.filter(item => item.category === active);
 
@@ -17,7 +17,7 @@ export default function Gallery() {
     <>
       <Helmet>
         <title>Gallery | Sama Hair Extensions UK</title>
-        <meta name="description" content="Browse Sama's portfolio of hair extension transformations — tape-in, micro ring, weft, colour and before & after results." />
+        <meta name="description" content="Browse Sama's portfolio of hair extension transformations — keratin bond, tape-in, nano &amp; micro ring and before &amp; after results." />
         <link rel="canonical" href="https://samahair.co.uk/gallery" />
         <meta property="og:url" content="https://samahair.co.uk/gallery" />
       </Helmet>

@@ -31,7 +31,7 @@ export default function ServiceDetail() {
       <section className="page-header services-header">
         <div className="page-header__overlay" />
         <div className="container page-header__content">
-          <span className="section-label">{service.tag || 'Service'}</span>
+          <span className="section-label">{service.heroLabel || service.tag || 'Service'}</span>
           <h1 className="section-title">{service.name}</h1>
           <p>{detail.tagline}</p>
         </div>
@@ -41,16 +41,16 @@ export default function ServiceDetail() {
       <section className="service-detail-info">
         <div className="container service-detail-info__grid">
           <div className="service-detail-info__item">
-            <span className="meta-label">Price</span>
-            <span className="service-detail-info__value">{service.price}</span>
+            <span className="meta-label">{service.priceLabel}</span>
+            <span className="service-detail-info__value">{service.priceValue}</span>
           </div>
           <div className="service-detail-info__item">
-            <span className="meta-label">Duration</span>
-            <span className="service-detail-info__value">{service.duration}</span>
+            <span className="meta-label">{service.durationLabel}</span>
+            <span className="service-detail-info__value">{service.durationValue}</span>
           </div>
           <div className="service-detail-info__item">
             <span className="meta-label">Maintenance</span>
-            <span className="service-detail-info__value">{service.maintenanceEvery}</span>
+            <span className="service-detail-info__value">{service.maintenanceValue}</span>
           </div>
           <div className="service-detail-info__item service-detail-info__cta">
             <Link to="/contact" className="btn-gold">Book This Service</Link>
@@ -72,7 +72,18 @@ export default function ServiceDetail() {
               <div className="service-detail-block__text">
                 <span className="service-detail-block__num">0{i + 1}</span>
                 <h2>{block.title}</h2>
-                <p>{block.text}</p>
+                {block.content.map((item, j) =>
+                  item.type === 'list' ? (
+                    <div className="service-detail-block__list" key={j}>
+                      <p className="service-detail-block__list-intro">{item.intro}</p>
+                      <ul>
+                        {item.items.map(li => <li key={li}>{li}</li>)}
+                      </ul>
+                    </div>
+                  ) : (
+                    <p key={j}>{item.text}</p>
+                  )
+                )}
               </div>
             </div>
           ))}
