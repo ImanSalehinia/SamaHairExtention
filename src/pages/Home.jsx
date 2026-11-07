@@ -164,6 +164,7 @@ export default function Home() {
             ],
             sameAs: [
               'https://instagram.com/Sama_hairextensionss',
+              'https://www.google.com/maps/place/Sama+Hair+Extensions/@51.4829449,-0.3125501,17z/data=!3m1!4b1!4m6!3m5!1s0x48760d54f378c049:0x7034aa49119cdc01!8m2!3d51.4829449!4d-0.3099752!16s%2Fg%2F11p1mf0_9p',
             ],
           })}
         </script>
