@@ -142,9 +142,10 @@ export default function Home() {
             ].map(name => ({ '@type': 'Place', name })),
             address: {
               '@type': 'PostalAddress',
-              streetAddress: 'Brentford High Street',
+              streetAddress: 'Unit 3 Brentford Lock, Brentford High Street',
               addressLocality: 'Brentford',
               addressRegion: 'London',
+              postalCode: 'TW8 8AQ',
               addressCountry: 'GB',
             },
             openingHoursSpecification: [
