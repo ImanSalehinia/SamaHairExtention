@@ -21,20 +21,8 @@ const extensionTypes = [
     text: 'Lightweight adhesive panels are carefully applied to sections of your natural hair. A popular choice for adding length and volume with a flat, seamless finish.',
   },
   {
-    name: 'Sew-In and Weave Hair Extensions',
-    text: 'Sew-in extensions and traditional hair weaves generally involve attaching extension hair to a prepared foundation, often made using braided sections of natural hair. These methods can provide length, volume and a variety of styling options.',
-  },
-  {
     name: 'Clip-In Hair Extensions',
     text: 'A temporary and flexible option for adding instant length and volume. Clip-in extensions can be easily attached and removed, making them ideal for special occasions or occasional styling.',
-  },
-  {
-    name: 'Halo Hair Extensions',
-    text: 'Halo extensions use an almost invisible wire or similar support to position the hair around the head, underneath the natural hair. They offer a removable option without attaching individual strands directly to the hair.',
-  },
-  {
-    name: 'Other Hair Extension Methods',
-    text: 'Other methods include flat-tip extensions, stick-tip extensions, micro-loop extensions and crochet-based installation techniques. The suitability of each method depends on its construction, fitting process and your individual hair needs.',
   },
 ];
 

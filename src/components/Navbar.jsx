@@ -27,6 +27,7 @@ export default function Navbar() {
           <NavLink to="/about" onClick={closeMenu}>About</NavLink>
           <NavLink to="/services" onClick={closeMenu}>Services</NavLink>
           <NavLink to="/gallery" onClick={closeMenu}>Gallery</NavLink>
+          <NavLink to="/blog" onClick={closeMenu}>Blog</NavLink>
           <NavLink to="/hair-extensions-london" onClick={closeMenu}>Areas</NavLink>
           <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
           <span className="navbar__icons">

@@ -1,7 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { galleryItems } from '../data/galleryItems';
-import './Gallery.css';
 import './Services.css';
 import './Home.css';
 import './Locations.css';
@@ -180,30 +178,6 @@ export default function Locations() {
         </div>
       </section>
 
-      {/* PHOTO GRID */}
-      <section className="locations-gallery section-pad">
-        <div className="container">
-          <div className="locations-gallery__header">
-            <span className="section-label">Real Results</span>
-            <h2 className="section-title">Client <span>Transformations</span></h2>
-            <div className="divider centered" />
-          </div>
-          <div className="locations-gallery__grid">
-            {galleryItems.map(item => (
-              <div key={item.id} className="locations-gallery__item">
-                <img src={item.img} alt={item.label} loading="lazy" />
-                <div className="locations-gallery__caption">
-                  <span>{item.label}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="locations-gallery__more">
-            <Link to="/gallery" className="btn-outline">View Full Gallery</Link>
-          </div>
-        </div>
-      </section>
-
       {/* METHODS */}
       <section className="locations-methods section-pad">
         <div className="container">
@@ -265,8 +239,8 @@ export default function Locations() {
       </section>
 
       {/* CTA */}
-      <section className="cta-banner" aria-label="Call to action">
-        <div className="container cta-banner__content">
+      <section className="services-cta" aria-label="Call to action">
+        <div className="container services-cta__content">
           <h2>Book Your West London Appointment</h2>
           <p>Free consultation, colour match and method advice — in the Brentford studio.</p>
           <Link to="/contact" className="btn-gold">Book Now</Link>

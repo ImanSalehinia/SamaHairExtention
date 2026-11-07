@@ -10,6 +10,8 @@ import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Contact from './pages/Contact';
 import Locations from './pages/Locations';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +33,8 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/hair-extensions-london" element={<Locations />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

@@ -377,6 +377,7 @@
 /* RECENT WORK */
 .recent-work {
   background: var(--dark-2);
+  border-top: 1px solid rgba(255,255,255,0.6);
 }
 
 .recent-work__header {
@@ -456,6 +457,103 @@
 
 .recent-work__areas-link:hover {
   opacity: 0.7;
+}
+
+/* BLOG TEASER */
+.home-blog {
+  background: var(--dark-2);
+}
+
+.home-blog__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.home-blog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.home-blog__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.home-blog__row--reverse .home-blog__row-img {
+  order: 2;
+}
+
+.home-blog__row--reverse .home-blog__row-text {
+  order: 1;
+}
+
+.home-blog__row-img {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.home-blog__row-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.home-blog__row:hover .home-blog__row-img img {
+  transform: scale(1.06);
+}
+
+.home-blog__cat {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.home-blog__row-text h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  color: var(--cream);
+  line-height: 1.4;
+  margin-bottom: 12px;
+  transition: color 0.3s;
+}
+
+.home-blog__row:hover .home-blog__row-text h3 {
+  color: var(--rose);
+}
+
+.home-blog__row-text p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.home-blog__row-link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--gold);
+  transition: color 0.3s;
+}
+
+.home-blog__row:hover .home-blog__row-link {
+  color: var(--rose);
+}
+
+.home-blog__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
 }
 
 /* CTA BANNER */
@@ -559,6 +657,21 @@
 
   .recent-work__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-blog__list {
+    gap: 40px;
+  }
+
+  .home-blog__row,
+  .home-blog__row--reverse {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .home-blog__row--reverse .home-blog__row-img,
+  .home-blog__row--reverse .home-blog__row-text {
+    order: initial;
   }
 
   .luxe-strip__panel {

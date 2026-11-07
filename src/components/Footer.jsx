@@ -19,6 +19,7 @@ export default function Footer() {
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/gallery">Gallery</Link>
+            <Link to="/blog">Blog</Link>
             <Link to="/services">Services &amp; Pricing</Link>
             <Link to="/hair-extensions-london">Areas We Cover</Link>
             <Link to="/contact">Book Appointment</Link>

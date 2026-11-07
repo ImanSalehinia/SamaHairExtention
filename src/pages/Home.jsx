@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import heroImg from '../assets/hero-luxe.jpg';
 import aboutImg from '../assets/about.jpg';
 import { galleryItems } from '../data/galleryItems';
+import { blogPosts } from '../data/blogPosts';
 import './Home.css';
 
 const heroBenefits = [
@@ -114,6 +115,8 @@ const featureCards = [
 
 const showcaseIds = [20, 11, 5];
 const showcase = showcaseIds.map(id => galleryItems.find(g => g.id === id));
+
+const latestBlogPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
 
 export default function Home() {
   return (
@@ -281,6 +284,41 @@ export default function Home() {
                 <Link to="/services" className="luxe-btn-primary">View Services &amp; Pricing</Link>
                 <Link to="/about" className="recent-work__areas-link">Learn more about Sama →</Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* BLOG TEASER */}
+        <section className="home-blog section-pad" aria-label="From the blog">
+          <div className="container">
+            <div className="home-blog__header">
+              <span className="section-label">The Journal</span>
+              <h2 className="section-title">Hair Tips &amp; <span>Guides</span></h2>
+              <div className="divider centered" />
+            </div>
+            <div className="home-blog__list">
+              {latestBlogPosts.slice(0, 4).map((post, i) => (
+                <Link
+                  to={`/blog/${post.slug}`}
+                  key={post.slug}
+                  className={`home-blog__row${i % 2 === 1 ? ' home-blog__row--reverse' : ''}`}
+                >
+                  <div className="home-blog__row-img">
+                    <img src={post.img} alt={post.title} loading="lazy" />
+                  </div>
+                  <div className="home-blog__row-text">
+                    <span className="home-blog__cat">{post.category}</span>
+                    <h3>{post.title}</h3>
+                    <p>{post.excerpt}</p>
+                    <span className="home-blog__row-link">Read Article <span aria-hidden="true">→</span></span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="home-blog__more">
+              <Link to="/blog" className="recent-work__areas-link">
+                See all articles <span aria-hidden="true">→</span>
+              </Link>
             </div>
           </div>
         </section>

@@ -1,0 +1,72 @@
+backend:
+  name: github
+  repo: ImanSalehinia/SamaHairExtention
+  branch: master
+  base_url: https://samahair.co.uk
+  auth_endpoint: api/auth
+
+site_url: https://samahair.co.uk
+display_url: https://samahair.co.uk
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Articles"
+    label_singular: "Article"
+    folder: "content/blog"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the article's web address, e.g. my-article-title. Use lowercase letters, numbers and dashes only." }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Extension Guides"
+          - "Hair Care Tips"
+          - "Colour & Style"
+          - "Booking & Consultations"
+          - "Prices & Appointments"
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { label: "Read Time", name: "readTime", widget: "string", default: "5 min read", hint: "e.g. \"5 min read\"" }
+      - { label: "Short Summary (shown on listing cards)", name: "excerpt", widget: "text" }
+      - label: "Cover Image"
+        name: "img"
+        widget: "image"
+        media_folder: "/public/uploads/blog"
+        public_folder: "/uploads/blog"
+      - { label: "Article Content", name: "body", widget: "markdown" }
+
+  - name: "gallery"
+    label: "Gallery Photos"
+    label_singular: "Photo"
+    folder: "content/gallery"
+    create: true
+    delete: true
+    slug: "{{id}}-{{label}}"
+    summary: "{{label}} ({{category}})"
+    sortable_fields: ["id", "label"]
+    fields:
+      - { label: "ID (unique number, do not reuse)", name: "id", widget: "number", value_type: "int" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Keratin Bond"
+          - "Nano & Micro Ring"
+          - "Tape-In"
+          - "Before & After"
+          - "Hair Transformations"
+      - { label: "Label (shown under the photo)", name: "label", widget: "string" }
+      - { label: "Description", name: "desc", widget: "string" }
+      - label: "Photo"
+        name: "img"
+        widget: "image"
+        media_folder: "/public/uploads/gallery"
+        public_folder: "/uploads/gallery"
