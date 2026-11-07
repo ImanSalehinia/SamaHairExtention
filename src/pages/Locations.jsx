@@ -8,8 +8,12 @@ import './Locations.css';
 
 const methods = [
   {
+    name: 'Keratin Bond Extensions',
+    desc: 'Individual strands fitted using small keratin bonds for a personalised, strand-by-strand transformation — ideal for natural movement, beautiful length and discreet attachments.',
+  },
+  {
     name: 'Tape-In Extensions',
-    desc: 'Ultra-thin, pre-taped wefts applied in sandwiched sections around your natural hair — the fastest route to noticeably longer, fuller hair with a completely flat, undetectable finish.',
+    desc: 'Ultra-thin, pre-taped panels applied in sandwiched sections around your natural hair — the fastest route to noticeably longer, fuller hair with a completely flat, undetectable finish.',
   },
   {
     name: 'Micro Ring Extensions',
@@ -18,10 +22,6 @@ const methods = [
   {
     name: 'Nano Ring Extensions',
     desc: 'A refined, miniature version of the micro ring — the smallest attachment point available, ideal when discretion and comfort matter most.',
-  },
-  {
-    name: 'Weft Extensions',
-    desc: 'Wefts fitted along hidden tracks close to the scalp for maximum volume in a single sitting — the method of choice for dramatic length and thickness.',
   },
   {
     name: 'Clip-In Extensions',
@@ -52,7 +52,7 @@ const areas = [
   },
   {
     name: 'Richmond upon Thames',
-    text: "Richmond's leafy streets and riverside are a short drive via the A4 — Richmond clients regularly book in for weft and micro ring installations ahead of events.",
+    text: "Richmond's leafy streets and riverside are a short drive via the A4 — Richmond clients regularly book in for keratin bond and micro ring installations ahead of events.",
   },
   {
     name: 'Hounslow',
@@ -102,7 +102,7 @@ export default function Locations() {
         <title>Hair Extensions in West London | Brentford, Chiswick, Ealing & More</title>
         <meta
           name="description"
-          content="Sama Hair Extensions is a Brentford-based specialist serving Chiswick, Ealing, Isleworth, Kew, Richmond, Hounslow, Osterley, Syon and Hammersmith. Tape-in, micro ring, nano ring, weft and clip-in extensions."
+          content="Sama Hair Extensions is a Brentford-based specialist serving Chiswick, Ealing, Isleworth, Kew, Richmond, Hounslow, Osterley, Syon and Hammersmith. Keratin bond, tape-in, micro ring, nano ring and clip-in extensions."
         />
         <link rel="canonical" href="https://samahair.co.uk/hair-extensions-london" />
         <meta property="og:url" content="https://samahair.co.uk/hair-extensions-london" />

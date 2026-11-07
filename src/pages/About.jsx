@@ -18,11 +18,7 @@ const extensionTypes = [
   },
   {
     name: 'Tape-In Hair Extensions',
-    text: 'Lightweight hair wefts with adhesive panels are carefully applied to sections of your natural hair. A popular choice for adding length and volume with a flat, seamless finish.',
-  },
-  {
-    name: 'Weft Hair Extensions',
-    text: 'Weft extensions consist of hair attached along a continuous track. Depending on the fitting technique, they may be installed using sewing, beads or other suitable methods to create fuller-looking hair.',
+    text: 'Lightweight adhesive panels are carefully applied to sections of your natural hair. A popular choice for adding length and volume with a flat, seamless finish.',
   },
   {
     name: 'Sew-In and Weave Hair Extensions',
@@ -34,11 +30,11 @@ const extensionTypes = [
   },
   {
     name: 'Halo Hair Extensions',
-    text: 'Halo extensions use an almost invisible wire or similar support to position a weft around the head, underneath the natural hair. They offer a removable option without attaching individual strands directly to the hair.',
+    text: 'Halo extensions use an almost invisible wire or similar support to position the hair around the head, underneath the natural hair. They offer a removable option without attaching individual strands directly to the hair.',
   },
   {
     name: 'Other Hair Extension Methods',
-    text: 'Other methods include hand-tied wefts, machine wefts, genius wefts, flat-tip extensions, stick-tip extensions, micro-loop extensions and crochet-based installation techniques. The suitability of each method depends on its construction, fitting process and your individual hair needs.',
+    text: 'Other methods include flat-tip extensions, stick-tip extensions, micro-loop extensions and crochet-based installation techniques. The suitability of each method depends on its construction, fitting process and your individual hair needs.',
   },
 ];
 
@@ -51,7 +47,7 @@ export default function About() {
         <title>About Sama Hair Extensions | Luxury Hair Extensions in London</title>
         <meta
           name="description"
-          content="Learn about Sama Hair Extensions — luxury hair extensions in London. Explore keratin bond, nano ring, micro ring, tape-in, weft, clip-in, halo and more."
+          content="Learn about Sama Hair Extensions — luxury hair extensions in London. Explore keratin bond, nano ring, micro ring, tape-in, clip-in, halo and more."
         />
         <link rel="canonical" href="https://samahair.co.uk/about" />
         <meta property="og:url" content="https://samahair.co.uk/about" />
@@ -179,7 +175,7 @@ export default function About() {
           <p>
             Contact Sama Hair Extensions to discuss your hair goals, explore suitable extension
             options and arrange a consultation. Whether you are interested in keratin bond hair
-            extensions, nano rings, micro rings, tape-ins, wefts or removable extensions, we can help
+            extensions, nano rings, micro rings, tape-ins or removable extensions, we can help
             you understand the options available and choose the next step towards your desired look.
           </p>
           <Link to="/contact" className="luxe-btn-primary">Book Your Consultation</Link>

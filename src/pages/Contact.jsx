@@ -6,7 +6,7 @@ const serviceOptions = [
   'Tape-In Extensions',
   'Micro Ring Extensions',
   'Nano Ring Extensions',
-  'Weft Extensions',
+  'Keratin Bond Extensions',
   'Clip-In Extensions',
   'Not Sure – Free Consultation',
 ];

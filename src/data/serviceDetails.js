@@ -97,14 +97,14 @@ export const serviceDetails = {
       {
         title: 'What Are Tape-In Extensions?',
         content: [
-          { type: 'p', text: 'Tape-In extensions use ultra-thin, pre-taped hair wefts that are attached to small sections of your natural hair using adhesive tape. The extensions lie flat against your head, creating a lightweight and discreet finish that blends beautifully with your own hair.' },
+          { type: 'p', text: 'Tape-In extensions use ultra-thin, pre-taped hair panels that are attached to small sections of your natural hair using adhesive tape. The extensions lie flat against your head, creating a lightweight and discreet finish that blends beautifully with your own hair.' },
           { type: 'p', text: 'They are a popular choice for adding length and volume with a smooth, natural-looking result.' },
         ],
       },
       {
         title: 'The Application Process',
         content: [
-          { type: 'p', text: 'We begin by sectioning your clean, dry hair into neat, even rows. A small section of your natural hair is then placed between two adhesive tape wefts to secure the extensions in position.' },
+          { type: 'p', text: 'We begin by sectioning your clean, dry hair into neat, even rows. A small section of your natural hair is then placed between two adhesive tape panels to secure the extensions in position.' },
           { type: 'p', text: 'The application requires no heat during fitting and is carried out carefully to ensure comfortable placement and an even, natural-looking blend.' },
         ],
       },

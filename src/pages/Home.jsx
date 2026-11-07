@@ -120,7 +120,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>Sama Hair Extensions | Premium Hair Specialist UK</title>
-        <meta name="description" content="Transform your look with Sama, a premium hair extension specialist in the UK with 3+ years of experience. Tape-in, micro ring, weft and more." />
+        <meta name="description" content="Transform your look with Sama, a premium hair extension specialist in the UK with 3+ years of experience. Keratin bond, tape-in, micro ring and more." />
         <link rel="canonical" href="https://samahair.co.uk/" />
         <meta property="og:url" content="https://samahair.co.uk/" />
         <script type="application/ld+json">
@@ -271,10 +271,10 @@ export default function Home() {
                 Whether you're looking for extra length, volume, or a complete transformation, I'll guide you through every step — from colour matching to aftercare — so your extensions last beautifully.
               </p>
               <div className="about__tags">
+                <span>Keratin Bond</span>
                 <span>Tape-In</span>
                 <span>Micro Ring</span>
                 <span>Nano Ring</span>
-                <span>Weft</span>
                 <span>Clip-In</span>
               </div>
               <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginTop: '32px', flexWrap: 'wrap' }}>
