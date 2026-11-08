@@ -1,4 +1,5 @@
 ---
+heroImage: "/uploads/about/hero.jpg"
 heroSubtitle: "Luxury Hair Extensions in London for Every Style"
 heroParagraph1: "At **Sama Hair Extensions**, we believe beautiful hair is about more than length. It is about confidence, individuality and finding a hairstyle that makes you feel your best."
 heroParagraph2: "Based in London, we specialise in hair extensions designed to add length, volume and fullness while creating a natural-looking blend with your own hair. Whether you want longer, fuller hair, a subtle transformation or a glamorous new look, our aim is to help you explore the options that suit your hair goals and personal style."

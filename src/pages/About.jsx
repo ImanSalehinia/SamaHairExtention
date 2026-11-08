@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import aboutHero from '../assets/about-hero.jpg';
 import { aboutContent } from '../data/aboutContent';
 import './Home.css';
 import './About.css';
@@ -26,7 +25,7 @@ export default function About() {
         <div className="container luxe-hero__box about-hero__box">
           <div
             className="luxe-hero__bg"
-            style={{ backgroundImage: `url(${aboutHero})` }}
+            style={{ backgroundImage: `url(${aboutContent.heroImage})` }}
             role="img"
             aria-label="Sama Hair Extensions studio"
           />

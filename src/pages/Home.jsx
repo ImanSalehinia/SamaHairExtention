@@ -1,8 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import heroImg from '../assets/hero-luxe.jpg';
-import aboutImg from '../assets/about.jpg';
-import { galleryItems } from '../data/galleryItems';
 import { blogPosts } from '../data/blogPosts';
 import { homeContent } from '../data/homeContent';
 import { settings } from '../data/settings';
@@ -88,35 +85,14 @@ const benefitsStrip = [
   },
 ];
 
-const featureCards = [
-  {
-    key: 'services',
-    label: 'OUR SERVICES',
-    title: 'Our Services',
-    img: galleryItems.find(g => g.id === 8).img,
-    cta: 'View Services',
-    to: '/services',
-  },
-  {
-    key: 'shop',
-    label: 'SHOP',
-    title: 'Shop Hair Extensions',
-    img: galleryItems.find(g => g.id === 9).img,
-    cta: 'Shop Now',
-    to: '/services',
-  },
-  {
-    key: 'results',
-    label: 'REAL RESULTS',
-    title: 'Real Results',
-    img: galleryItems.find(g => g.id === 15).img,
-    cta: 'View Gallery',
-    to: '/gallery',
-  },
+const featureCardLinks = [
+  { cta: 'View Services', to: '/services' },
+  { cta: 'Shop Now', to: '/services' },
+  { cta: 'View Gallery', to: '/gallery' },
 ];
 
-const showcaseIds = [20, 11, 5];
-const showcase = showcaseIds.map(id => galleryItems.find(g => g.id === id));
+const featureCards = homeContent.featureCards.map((c, i) => ({ ...c, key: c.title, ...featureCardLinks[i] }));
+const showcase = homeContent.recentWork;
 
 const latestBlogPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -178,7 +154,7 @@ export default function Home() {
           <div className="container luxe-hero__box">
             <div
               className="luxe-hero__bg"
-              style={{ backgroundImage: `url(${heroImg})` }}
+              style={{ backgroundImage: `url(${homeContent.heroImage})` }}
               role="img"
               aria-label="Long, voluminous hair extensions by Sama"
             />
@@ -253,7 +229,7 @@ export default function Home() {
           <div className="container about__grid">
             <div className="about__image-wrap">
               <img
-                src={aboutImg}
+                src={homeContent.aboutImage}
                 alt="Sama – Hair Extension Specialist"
                 className="about__image"
               />
@@ -341,7 +317,7 @@ export default function Home() {
             </div>
             <div className="recent-work__grid">
               {showcase.map((item) => (
-                <div key={item.id} className="recent-work__item">
+                <div key={item.label} className="recent-work__item">
                   <img src={item.img} alt={item.label} loading="lazy" />
                   <div className="recent-work__caption">
                     <span className="recent-work__cat">{item.category}</span>

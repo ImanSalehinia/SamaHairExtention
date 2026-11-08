@@ -43,14 +43,46 @@ collections:
         label: "Home Page Content"
         file: "content/home.md"
         fields:
+          - label: "Hero: Background Photo"
+            name: "heroImage"
+            widget: "image"
+            media_folder: "/public/uploads/home"
+            public_folder: "/uploads/home"
           - { label: "Hero: Small Label Above Title", name: "heroEyebrow", widget: "string" }
           - { label: "Hero: Title (plain part)", name: "heroTitleMain", widget: "string" }
           - { label: "Hero: Title (gold highlighted part)", name: "heroTitleHighlight", widget: "string" }
           - { label: "Hero: Subtitle", name: "heroSubtitle", widget: "text" }
+          - label: "About Sama: Photo"
+            name: "aboutImage"
+            widget: "image"
+            media_folder: "/public/uploads/home"
+            public_folder: "/uploads/home"
           - { label: "About Sama: Years Badge (e.g. 3+)", name: "aboutBadgeYears", widget: "string" }
           - { label: "About Sama: Paragraph 1", name: "aboutParagraph1", widget: "text" }
           - { label: "About Sama: Paragraph 2", name: "aboutParagraph2", widget: "text" }
           - { label: "About Sama: Paragraph 3", name: "aboutParagraph3", widget: "text" }
+          - label: "'Explore' Cards (Our Services / Shop / Real Results)"
+            name: "featureCards"
+            widget: "list"
+            fields:
+              - { label: "Small Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Photo"
+                name: "img"
+                widget: "image"
+                media_folder: "/public/uploads/home"
+                public_folder: "/uploads/home"
+          - label: "Recent Transformations Photos"
+            name: "recentWork"
+            widget: "list"
+            fields:
+              - label: "Photo"
+                name: "img"
+                widget: "image"
+                media_folder: "/public/uploads/home"
+                public_folder: "/uploads/home"
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Caption", name: "label", widget: "string" }
 
   - name: "about"
     label: "About Page"
@@ -59,6 +91,11 @@ collections:
         label: "About Page Content"
         file: "content/about.md"
         fields:
+          - label: "Hero Background Photo"
+            name: "heroImage"
+            widget: "image"
+            media_folder: "/public/uploads/about"
+            public_folder: "/uploads/about"
           - { label: "Hero Subtitle", name: "heroSubtitle", widget: "string" }
           - { label: "Hero Paragraph 1", name: "heroParagraph1", widget: "text" }
           - { label: "Hero Paragraph 2", name: "heroParagraph2", widget: "text" }
