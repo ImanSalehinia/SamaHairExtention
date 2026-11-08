@@ -67,7 +67,7 @@ export default function ServiceDetail() {
               className={`service-detail-block${i % 2 === 1 ? ' service-detail-block--reverse' : ''}`}
             >
               <div className="service-detail-block__image">
-                <img src={block.img || placeholderImages[i].img} alt={block.title} loading="lazy" />
+                <img src={block.img || placeholderImages[i % placeholderImages.length].img} alt={block.title} loading="lazy" />
               </div>
               <div className="service-detail-block__text">
                 <span className="service-detail-block__num">0{i + 1}</span>

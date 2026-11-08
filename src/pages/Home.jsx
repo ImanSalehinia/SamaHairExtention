@@ -85,13 +85,7 @@ const benefitsStrip = [
   },
 ];
 
-const featureCardLinks = [
-  { cta: 'View Services', to: '/services' },
-  { cta: 'Shop Now', to: '/services' },
-  { cta: 'View Gallery', to: '/gallery' },
-];
-
-const featureCards = homeContent.featureCards.map((c, i) => ({ ...c, key: c.title, ...featureCardLinks[i] }));
+const featureCards = homeContent.featureCards.map(c => ({ ...c, key: c.title }));
 const showcase = homeContent.recentWork;
 
 const latestBlogPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -214,8 +208,8 @@ export default function Home() {
                 <div className="luxe-card__info">
                   <span className="luxe-card__label">{c.label}</span>
                   <h3>{c.title}</h3>
-                  <Link to={c.to} className="luxe-btn-secondary">
-                    {c.cta} <span aria-hidden="true">→</span>
+                  <Link to={c.ctaLink} className="luxe-btn-secondary">
+                    {c.ctaText} <span aria-hidden="true">→</span>
                   </Link>
                 </div>
               </div>

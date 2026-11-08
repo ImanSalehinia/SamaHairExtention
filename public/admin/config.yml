@@ -61,7 +61,7 @@ collections:
           - { label: "About Sama: Paragraph 1", name: "aboutParagraph1", widget: "text" }
           - { label: "About Sama: Paragraph 2", name: "aboutParagraph2", widget: "text" }
           - { label: "About Sama: Paragraph 3", name: "aboutParagraph3", widget: "text" }
-          - label: "'Explore' Cards (Our Services / Shop / Real Results)"
+          - label: "'Explore' Cards (add, delete or reorder freely)"
             name: "featureCards"
             widget: "list"
             fields:
@@ -72,7 +72,9 @@ collections:
                 widget: "image"
                 media_folder: "/public/uploads/home"
                 public_folder: "/uploads/home"
-          - label: "Recent Transformations Photos"
+              - { label: "Button Text (e.g. View Services)", name: "ctaText", widget: "string" }
+              - { label: "Button Link (e.g. /services, /gallery, /contact)", name: "ctaLink", widget: "string" }
+          - label: "Recent Transformations Photos (add, delete or reorder freely)"
             name: "recentWork"
             widget: "list"
             fields:
@@ -100,7 +102,7 @@ collections:
           - { label: "Hero Paragraph 1", name: "heroParagraph1", widget: "text" }
           - { label: "Hero Paragraph 2", name: "heroParagraph2", widget: "text" }
           - { label: "Extension Types: Intro Text", name: "extensionTypesIntro", widget: "text" }
-          - label: "Extension Types"
+          - label: "Extension Types (add, delete or reorder freely)"
             name: "extensionTypes"
             widget: "list"
             fields:
@@ -124,13 +126,14 @@ collections:
     label: "Services & Pricing"
     label_singular: "Service"
     folder: "content/services"
-    create: false
-    delete: false
+    create: true
+    delete: true
+    identifier_field: "name"
     slug: "{{slug}}"
     summary: "{{name}}"
     sortable_fields: ["order", "name"]
     fields:
-      - { label: "Order (controls display order, 1 = first)", name: "order", widget: "number", value_type: "int" }
+      - { label: "Order (controls display order, 1 = first, 2 = second, etc.)", name: "order", widget: "number", value_type: "int", hint: "Set this number to control where the service appears in the list." }
       - { label: "URL Slug (do not change)", name: "slug", widget: "string" }
       - { label: "Service Name", name: "name", widget: "string" }
       - { label: "Badge Tag (e.g. Most Popular, leave blank for none)", name: "tag", widget: "string", required: false }
@@ -141,14 +144,14 @@ collections:
       - { label: "Volume/Info Line 2", name: "metaLine2", widget: "string" }
       - { label: "Short Description", name: "desc", widget: "text" }
       - { label: "Best For", name: "bestFor", widget: "string" }
-      - { label: "What's Included", name: "includes", widget: "list" }
+      - { label: "What's Included (add, delete or reorder freely)", name: "includes", widget: "list" }
       - { label: "Detail Page Tagline", name: "tagline", widget: "string" }
       - { label: "Price Label", name: "priceLabel", widget: "string" }
       - { label: "Price Value", name: "priceValue", widget: "string" }
       - { label: "Duration Label", name: "durationLabel", widget: "string" }
       - { label: "Duration Value", name: "durationValue", widget: "string" }
       - { label: "Maintenance Info", name: "maintenanceValue", widget: "text" }
-      - label: "Detail Page Sections"
+      - label: "Detail Page Sections (add, delete or reorder freely)"
         name: "sections"
         widget: "list"
         fields:
@@ -167,11 +170,12 @@ collections:
     folder: "content/locations"
     create: true
     delete: true
+    identifier_field: "name"
     slug: "{{slug}}"
     summary: "{{name}}"
     sortable_fields: ["order", "name"]
     fields:
-      - { label: "Order (controls display order, 1 = first)", name: "order", widget: "number", value_type: "int" }
+      - { label: "Order (controls display order, 1 = first, 2 = second, etc.)", name: "order", widget: "number", value_type: "int", hint: "Set this number to control where the area appears in the list." }
       - { label: "Area Name", name: "name", widget: "string" }
       - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the page's web address, lowercase letters and dashes only." }
       - { label: "Short Text (shown on the Areas We Cover page)", name: "cardText", widget: "text" }
