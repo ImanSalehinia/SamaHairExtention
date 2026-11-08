@@ -1,32 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import aboutHero from '../assets/about-hero.jpg';
-import { galleryItems } from '../data/galleryItems';
+import { aboutContent } from '../data/aboutContent';
 import './Home.css';
 import './About.css';
 
-const extensionTypes = [
-  {
-    name: 'Keratin Bond Hair Extensions',
-    aka: 'K-Tip / U-Tip / Pre-Bonded',
-    text: 'Individual strands of premium human hair are attached using small keratin bonds, creating a natural-looking finish with beautiful movement. Ideal for adding length and volume with discreet, strand-by-strand placement.',
-  },
-  {
-    name: 'Nano & Micro Ring Hair Extensions',
-    aka: 'Nano Rings / Micro Rings',
-    text: 'Individual hair extension strands are attached using small rings or beads, without glue or heat during application. A versatile method for adding natural-looking length and volume with discreet attachments.',
-  },
-  {
-    name: 'Tape-In Hair Extensions',
-    text: 'Lightweight adhesive panels are carefully applied to sections of your natural hair. A popular choice for adding length and volume with a flat, seamless finish.',
-  },
-  {
-    name: 'Clip-In Hair Extensions',
-    text: 'A temporary and flexible option for adding instant length and volume. Clip-in extensions can be easily attached and removed, making them ideal for special occasions or occasional styling.',
-  },
-];
-
-const secondaryImage = galleryItems.find(g => g.id === 15).img;
+const extensionTypes = aboutContent.extensionTypes;
+const secondaryImage = aboutContent.qualityImage;
 
 export default function About() {
   return (
@@ -55,18 +35,9 @@ export default function About() {
             <div className="about-hero__content">
               <span className="section-label">About Us</span>
               <h1 className="section-title">About <span>Sama Hair Extensions</span></h1>
-              <h2 className="about-hero__subtitle">Luxury Hair Extensions in London for Every Style</h2>
-              <p>
-                At <strong>Sama Hair Extensions</strong>, we believe beautiful hair is about more than
-                length. It is about confidence, individuality and finding a hairstyle that makes you
-                feel your best.
-              </p>
-              <p>
-                Based in London, we specialise in hair extensions designed to add length, volume and
-                fullness while creating a natural-looking blend with your own hair. Whether you want
-                longer, fuller hair, a subtle transformation or a glamorous new look, our aim is to help
-                you explore the options that suit your hair goals and personal style.
-              </p>
+              <h2 className="about-hero__subtitle">{aboutContent.heroSubtitle}</h2>
+              <p dangerouslySetInnerHTML={{ __html: aboutContent.heroParagraph1.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>') }} />
+              <p>{aboutContent.heroParagraph2}</p>
               <Link to="/contact" className="luxe-btn-primary">Book a Consultation</Link>
             </div>
           </div>
@@ -80,10 +51,7 @@ export default function About() {
             <span className="section-label">The Options</span>
             <h2 className="section-title">Explore Different <span>Types of Hair Extensions</span></h2>
             <div className="divider centered" />
-            <p className="about-section__intro">
-              There are many types of hair extensions available, each offering different benefits
-              depending on your natural hair, desired result, lifestyle and maintenance preferences.
-            </p>
+            <p className="about-section__intro">{aboutContent.extensionTypesIntro}</p>
           </div>
           <div className="about-types__grid">
             {extensionTypes.map(t => (
@@ -104,25 +72,13 @@ export default function About() {
             <span className="section-label">A New Way to Transform Your Hair</span>
             <h2 className="section-title">Love Balayage, Highlights &amp; Blonde Hair? <span>Without the Bleach.</span></h2>
             <div className="divider centered" />
-            <p className="about-section__intro">
-              Dreaming of lighter shades, beautiful highlights or a balayage look? You don&rsquo;t
-              always need to bleach or chemically colour your natural hair to achieve the look you
-              love.
-            </p>
+            <p className="about-section__intro">{aboutContent.balayageIntro}</p>
           </div>
 
           <div className="about-braids__alt">
-            <p>
-              With premium 100% human hair extensions, you can add blonde, caramel, honey or
-              lighter-toned pieces to your natural hair, creating beautiful dimension, contrast and a
-              sun-kissed finish without chemically lightening your own hair.
-            </p>
-            <p>
-              Whether you love subtle highlights, face-framing blonde pieces, a balayage-inspired
-              blend or a complete colour transformation, hair extensions offer a versatile way to
-              experiment with colour while keeping your natural hair colour untouched.
-            </p>
-            <p className="about-braids__tagline">Your dream colour. No bleach needed. Just beautiful hair.</p>
+            <p>{aboutContent.balayageParagraph1}</p>
+            <p>{aboutContent.balayageParagraph2}</p>
+            <p className="about-braids__tagline">{aboutContent.balayageTagline}</p>
             <Link to="/contact" className="luxe-btn-primary">Explore Hair Extension Services</Link>
           </div>
         </div>
@@ -138,20 +94,9 @@ export default function About() {
             <span className="section-label">Our Approach</span>
             <h2 className="section-title">Quality, <span>Personalisation</span> &amp; Hair Care</h2>
             <div className="divider" />
-            <p>
-              At Sama Hair Extensions, we believe that choosing the right method is just as important
-              as choosing the desired length and colour.
-            </p>
-            <p>
-              We encourage clients to consider their natural hair condition, styling preferences and
-              maintenance requirements before selecting an extension method. Appropriate application,
-              professional removal where required and suitable aftercare are important parts of the
-              extension experience.
-            </p>
-            <p>
-              Our goal is to help you understand your options and find an approach that complements
-              your natural hair and desired look.
-            </p>
+            <p>{aboutContent.qualityParagraph1}</p>
+            <p>{aboutContent.qualityParagraph2}</p>
+            <p>{aboutContent.qualityParagraph3}</p>
           </div>
         </div>
       </section>

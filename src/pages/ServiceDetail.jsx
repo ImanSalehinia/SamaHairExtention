@@ -1,7 +1,8 @@
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { services } from '../data/services';
-import { serviceDetails } from '../data/serviceDetails';
 import { galleryItems } from '../data/galleryItems';
 import './Services.css';
 import './ServiceDetail.css';
@@ -12,9 +13,8 @@ const placeholderImages = placeholderImageIds.map(id => galleryItems.find(g => g
 export default function ServiceDetail() {
   const { slug } = useParams();
   const service = services.find(s => s.slug === slug);
-  const detail = serviceDetails[slug];
 
-  if (!service || !detail) {
+  if (!service) {
     return <Navigate to="/services" replace />;
   }
 
@@ -33,7 +33,7 @@ export default function ServiceDetail() {
         <div className="container page-header__content">
           <span className="section-label">{service.heroLabel || service.tag || 'Service'}</span>
           <h1 className="section-title">{service.name}</h1>
-          <p>{detail.tagline}</p>
+          <p>{service.tagline}</p>
         </div>
       </section>
 
@@ -61,29 +61,20 @@ export default function ServiceDetail() {
       {/* STAGGERED CONTENT BLOCKS */}
       <section className="service-detail-blocks section-pad">
         <div className="container">
-          {detail.blocks.map((block, i) => (
+          {service.sections.map((block, i) => (
             <div
               key={block.title}
               className={`service-detail-block${i % 2 === 1 ? ' service-detail-block--reverse' : ''}`}
             >
               <div className="service-detail-block__image">
-                <img src={placeholderImages[i].img} alt={block.title} loading="lazy" />
+                <img src={block.img || placeholderImages[i].img} alt={block.title} loading="lazy" />
               </div>
               <div className="service-detail-block__text">
                 <span className="service-detail-block__num">0{i + 1}</span>
                 <h2>{block.title}</h2>
-                {block.content.map((item, j) =>
-                  item.type === 'list' ? (
-                    <div className="service-detail-block__list" key={j}>
-                      <p className="service-detail-block__list-intro">{item.intro}</p>
-                      <ul>
-                        {item.items.map(li => <li key={li}>{li}</li>)}
-                      </ul>
-                    </div>
-                  ) : (
-                    <p key={j}>{item.text}</p>
-                  )
-                )}
+                <div className="service-detail-block__markdown">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{block.body}</ReactMarkdown>
+                </div>
               </div>
             </div>
           ))}

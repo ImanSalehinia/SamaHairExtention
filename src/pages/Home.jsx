@@ -4,6 +4,8 @@ import heroImg from '../assets/hero-luxe.jpg';
 import aboutImg from '../assets/about.jpg';
 import { galleryItems } from '../data/galleryItems';
 import { blogPosts } from '../data/blogPosts';
+import { homeContent } from '../data/homeContent';
+import { settings } from '../data/settings';
 import './Home.css';
 
 const heroBenefits = [
@@ -133,8 +135,8 @@ export default function Home() {
             name: 'Sama Hair Extensions',
             image: 'https://samahair.co.uk/og-image.jpg',
             url: 'https://samahair.co.uk/',
-            telephone: '+44-7472-113443',
-            email: 'samahairextensions@gmail.com',
+            telephone: settings.phone,
+            email: settings.email,
             priceRange: '££',
             areaServed: [
               'Brentford', 'Chiswick', 'Ealing', 'Isleworth', 'Kew',
@@ -142,11 +144,11 @@ export default function Home() {
             ].map(name => ({ '@type': 'Place', name })),
             address: {
               '@type': 'PostalAddress',
-              streetAddress: 'Unit 3 Brentford Lock, Brentford High Street',
-              addressLocality: 'Brentford',
-              addressRegion: 'London',
-              postalCode: 'TW8 8AQ',
-              addressCountry: 'GB',
+              streetAddress: settings.addressStreet,
+              addressLocality: settings.addressLocality,
+              addressRegion: settings.addressRegion,
+              postalCode: settings.addressPostcode,
+              addressCountry: settings.addressCountry,
             },
             openingHoursSpecification: [
               {
@@ -163,8 +165,8 @@ export default function Home() {
               },
             ],
             sameAs: [
-              'https://instagram.com/Sama_hairextensionss',
-              'https://www.google.com/maps/place/Sama+Hair+Extensions/@51.4829449,-0.3125501,17z/data=!3m1!4b1!4m6!3m5!1s0x48760d54f378c049:0x7034aa49119cdc01!8m2!3d51.4829449!4d-0.3099752!16s%2Fg%2F11p1mf0_9p',
+              settings.instagramUrl,
+              settings.googleMapsUrl,
             ],
           })}
         </script>
@@ -185,13 +187,13 @@ export default function Home() {
             <span className="luxe-hero__script">More Than Hair <span className="luxe-hero__script-heart">♡</span></span>
             <div className="luxe-hero__inner">
               <div className="luxe-hero__content">
-                <span className="luxe-hero__eyebrow">Premium Hair Extensions in London</span>
+                <span className="luxe-hero__eyebrow">{homeContent.heroEyebrow}</span>
                 <h1 className="luxe-hero__title">
-                  Transform Your<br />
-                  <span>Hair, Transform</span> You
+                  {homeContent.heroTitleMain}<br />
+                  <span>{homeContent.heroTitleHighlight}</span>
                 </h1>
                 <p className="luxe-hero__sub">
-                  100% human hair extensions for a natural, seamless and beautiful look.
+                  {homeContent.heroSubtitle}
                 </p>
                 <Link to="/contact" className="luxe-btn-primary">
                   Book Free Consultation <span aria-hidden="true">→</span>
@@ -256,7 +258,7 @@ export default function Home() {
                 className="about__image"
               />
               <div className="about__badge">
-                <span className="about__badge-years">3+</span>
+                <span className="about__badge-years">{homeContent.aboutBadgeYears}</span>
                 <span className="about__badge-text">Years of Excellence</span>
               </div>
             </div>
@@ -267,13 +269,13 @@ export default function Home() {
               </h2>
               <div className="divider" />
               <p>
-                Hi, I'm Sama — a dedicated hair extension specialist with over 3 years of hands-on experience transforming the way my clients look and feel.
+                {homeContent.aboutParagraph1}
               </p>
               <p style={{ marginTop: '16px' }}>
-                My journey started with a deep love for hairdressing and a passion for making people feel their most confident selves. I've trained extensively in the UK and work with only the highest-quality Remy human hair to deliver results that look completely natural.
+                {homeContent.aboutParagraph2}
               </p>
               <p style={{ marginTop: '16px' }}>
-                Whether you're looking for extra length, volume, or a complete transformation, I'll guide you through every step — from colour matching to aftercare — so your extensions last beautifully.
+                {homeContent.aboutParagraph3}
               </p>
               <div className="about__tags">
                 <span>Keratin Bond</span>

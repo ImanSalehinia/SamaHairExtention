@@ -155,9 +155,16 @@
 }
 
 .locations-areas__card {
+  display: block;
   background: var(--dark);
   border-left: 2px solid var(--gold);
   padding: 22px 26px;
+  text-decoration: none;
+  transition: background 0.25s;
+}
+
+.locations-areas__card:hover {
+  background: rgba(212,175,55,0.08);
 }
 
 .locations-areas__card h3 {

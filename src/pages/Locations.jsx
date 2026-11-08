@@ -1,5 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { locations } from '../data/locations';
+import { settings } from '../data/settings';
 import './Services.css';
 import './Home.css';
 import './Locations.css';
@@ -24,49 +26,6 @@ const methods = [
   {
     name: 'Clip-In Extensions',
     desc: 'No commitment, no appointment needed after your first fitting — clip in whenever you want extra length or volume, then take them out at the end of the day.',
-  },
-];
-
-const areas = [
-  {
-    name: 'Brentford',
-    text: "Our home studio is based right here in Brentford, moments from Brentford Lock and the River Thames. If you're local, you can reach your appointment in minutes from Brentford High Street.",
-  },
-  {
-    name: 'Chiswick',
-    text: 'A short hop down the A4, Chiswick clients often combine their visit with a morning at Chiswick House and Gardens or a walk along the riverside.',
-  },
-  {
-    name: 'Ealing',
-    text: "Known as the 'Queen of the Suburbs', Ealing is just a few stops away — plenty of clients travel in via the Elizabeth line for a full tape-in or micro ring session.",
-  },
-  {
-    name: 'Isleworth',
-    text: 'Neighbouring Isleworth, with its riverside village charm close to Syon Park, is one of the easiest areas to reach — a quick drive or bus ride across Brentford.',
-  },
-  {
-    name: 'Kew',
-    text: 'Just across Kew Bridge from the studio, Kew clients often pair their hair appointment with a visit to the world-famous Kew Gardens.',
-  },
-  {
-    name: 'Richmond upon Thames',
-    text: "Richmond's leafy streets and riverside are a short drive via the A4 — Richmond clients regularly book in for keratin bond and micro ring installations ahead of events.",
-  },
-  {
-    name: 'Hounslow',
-    text: 'Well connected by the Piccadilly line, Hounslow is one of our most central service areas, with easy access for clients from right across the borough.',
-  },
-  {
-    name: 'Osterley',
-    text: 'Close to Osterley Park, this quiet residential area is a favourite with return clients booking in for maintenance and re-fits.',
-  },
-  {
-    name: 'Syon',
-    text: 'The Syon Park area, just over the water from Brentford, is within easy reach for appointments — no need to travel into Central London.',
-  },
-  {
-    name: 'Hammersmith',
-    text: 'Hammersmith clients travel in via the regular bus routes connecting straight to Brentford, making the journey simple even on a lunch break.',
   },
 ];
 
@@ -117,17 +76,18 @@ export default function Locations() {
             provider: {
               '@type': 'HairSalon',
               name: 'Sama Hair Extensions',
-              telephone: '+44-7472-113443',
-              email: 'samahairextensions@gmail.com',
+              telephone: settings.phone,
+              email: settings.email,
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Brentford High Street',
-                addressLocality: 'Brentford',
-                addressRegion: 'London',
-                addressCountry: 'GB',
+                streetAddress: settings.addressStreet,
+                addressLocality: settings.addressLocality,
+                addressRegion: settings.addressRegion,
+                postalCode: settings.addressPostcode,
+                addressCountry: settings.addressCountry,
               },
             },
-            areaServed: areas.map(a => ({ '@type': 'Place', name: a.name })),
+            areaServed: locations.map(a => ({ '@type': 'Place', name: a.name })),
           })}
         </script>
       </Helmet>
@@ -209,11 +169,11 @@ export default function Locations() {
             <div className="divider centered" />
           </div>
           <div className="locations-areas__grid">
-            {areas.map(a => (
-              <div key={a.name} className="locations-areas__card">
+            {locations.map(a => (
+              <Link key={a.slug} to={`/hair-extensions-london/${a.slug}`} className="locations-areas__card">
                 <h3>{a.name}</h3>
-                <p>{a.text}</p>
-              </div>
+                <p>{a.cardText}</p>
+              </Link>
             ))}
           </div>
         </div>

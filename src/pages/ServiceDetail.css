@@ -130,6 +130,44 @@
   background: var(--gold);
 }
 
+.service-detail-block__markdown p {
+  color: var(--text-muted);
+  line-height: 1.85;
+  font-size: 0.98rem;
+  margin-bottom: 14px;
+}
+
+.service-detail-block__markdown p:last-child {
+  margin-bottom: 0;
+}
+
+.service-detail-block__markdown ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.service-detail-block__markdown li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.service-detail-block__markdown li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
 .service-detail-back {
   margin-top: 24px;
 }

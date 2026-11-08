@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { settings } from '../data/settings';
 import './Contact.css';
 
 const serviceOptions = [
@@ -113,7 +114,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact-info__label">Phone / WhatsApp</span>
-                  <a href="tel:+447472113443" className="contact-info__value">+44 7472 113443</a>
+                  <a href={`tel:${settings.phoneHref}`} className="contact-info__value">{settings.phone}</a>
                 </div>
               </div>
 
@@ -126,7 +127,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact-info__label">Email</span>
-                  <a href="mailto:samahairextensions@gmail.com" className="contact-info__value">samahairextensions@gmail.com</a>
+                  <a href={`mailto:${settings.email}`} className="contact-info__value">{settings.email}</a>
                 </div>
               </div>
 
@@ -140,7 +141,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact-info__label">Instagram</span>
-                  <a href="https://instagram.com/Sama_hairextensionss" target="_blank" rel="noreferrer" className="contact-info__value">@Sama_hairextensionss</a>
+                  <a href={settings.instagramUrl} target="_blank" rel="noreferrer" className="contact-info__value">{settings.instagramHandle}</a>
                 </div>
               </div>
 
@@ -153,8 +154,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact-info__label">Location</span>
-                  <span className="contact-info__value">Brentford High Street, London</span>
-                  <span className="contact-info__sub">Near Brentford Lock — exact address provided upon booking</span>
+                  <span className="contact-info__value">{settings.addressDisplay}</span>
+                  <span className="contact-info__sub">{settings.addressNote}</span>
                 </div>
               </div>
             </div>
@@ -162,9 +163,9 @@ export default function Contact() {
             <div className="contact-info__hours">
               <h3>Working Hours</h3>
               <div className="hours-grid">
-                <span>Monday – Friday</span><span>9:00am – 7:00pm</span>
-                <span>Saturday</span><span>9:00am – 5:00pm</span>
-                <span>Sunday</span><span>By appointment</span>
+                <span>Monday – Friday</span><span>{settings.hoursWeekdays}</span>
+                <span>Saturday</span><span>{settings.hoursSaturday}</span>
+                <span>Sunday</span><span>{settings.hoursSunday}</span>
               </div>
             </div>
           </aside>

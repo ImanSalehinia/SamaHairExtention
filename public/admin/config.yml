@@ -12,6 +12,140 @@ media_folder: "public/uploads"
 public_folder: "/uploads"
 
 collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "settings"
+        label: "Contact Details & Hours"
+        file: "content/settings.json"
+        fields:
+          - { label: "Phone Number (shown, e.g. +44 7472 113443)", name: "phone", widget: "string" }
+          - { label: "Phone Number (for links, digits only, e.g. +447472113443)", name: "phoneHref", widget: "string" }
+          - { label: "Email Address", name: "email", widget: "string" }
+          - { label: "Instagram Link", name: "instagramUrl", widget: "string" }
+          - { label: "Instagram Handle (shown, e.g. @Sama_hairextensionss)", name: "instagramHandle", widget: "string" }
+          - { label: "Google Maps Link", name: "googleMapsUrl", widget: "string" }
+          - { label: "Street Address", name: "addressStreet", widget: "string" }
+          - { label: "Town / City", name: "addressLocality", widget: "string" }
+          - { label: "Region", name: "addressRegion", widget: "string" }
+          - { label: "Postcode", name: "addressPostcode", widget: "string" }
+          - { label: "Country Code (e.g. GB)", name: "addressCountry", widget: "string" }
+          - { label: "Address (shown on Contact page)", name: "addressDisplay", widget: "string" }
+          - { label: "Address Note (shown on Contact page)", name: "addressNote", widget: "string" }
+          - { label: "Hours: Monday – Friday", name: "hoursWeekdays", widget: "string" }
+          - { label: "Hours: Saturday", name: "hoursSaturday", widget: "string" }
+          - { label: "Hours: Sunday", name: "hoursSunday", widget: "string" }
+
+  - name: "home"
+    label: "Home Page"
+    files:
+      - name: "home"
+        label: "Home Page Content"
+        file: "content/home.md"
+        fields:
+          - { label: "Hero: Small Label Above Title", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero: Title (plain part)", name: "heroTitleMain", widget: "string" }
+          - { label: "Hero: Title (gold highlighted part)", name: "heroTitleHighlight", widget: "string" }
+          - { label: "Hero: Subtitle", name: "heroSubtitle", widget: "text" }
+          - { label: "About Sama: Years Badge (e.g. 3+)", name: "aboutBadgeYears", widget: "string" }
+          - { label: "About Sama: Paragraph 1", name: "aboutParagraph1", widget: "text" }
+          - { label: "About Sama: Paragraph 2", name: "aboutParagraph2", widget: "text" }
+          - { label: "About Sama: Paragraph 3", name: "aboutParagraph3", widget: "text" }
+
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about"
+        label: "About Page Content"
+        file: "content/about.md"
+        fields:
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "string" }
+          - { label: "Hero Paragraph 1", name: "heroParagraph1", widget: "text" }
+          - { label: "Hero Paragraph 2", name: "heroParagraph2", widget: "text" }
+          - { label: "Extension Types: Intro Text", name: "extensionTypesIntro", widget: "text" }
+          - label: "Extension Types"
+            name: "extensionTypes"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Also Known As (optional)", name: "aka", widget: "string", required: false }
+              - { label: "Description", name: "text", widget: "text" }
+          - { label: "Balayage Section: Intro Text", name: "balayageIntro", widget: "text" }
+          - { label: "Balayage Section: Paragraph 1", name: "balayageParagraph1", widget: "text" }
+          - { label: "Balayage Section: Paragraph 2", name: "balayageParagraph2", widget: "text" }
+          - { label: "Balayage Section: Tagline", name: "balayageTagline", widget: "string" }
+          - label: "Quality Section: Photo"
+            name: "qualityImage"
+            widget: "image"
+            media_folder: "/public/uploads/about"
+            public_folder: "/uploads/about"
+          - { label: "Quality Section: Paragraph 1", name: "qualityParagraph1", widget: "text" }
+          - { label: "Quality Section: Paragraph 2", name: "qualityParagraph2", widget: "text" }
+          - { label: "Quality Section: Paragraph 3", name: "qualityParagraph3", widget: "text" }
+
+  - name: "services"
+    label: "Services & Pricing"
+    label_singular: "Service"
+    folder: "content/services"
+    create: false
+    delete: false
+    slug: "{{slug}}"
+    summary: "{{name}}"
+    sortable_fields: ["order", "name"]
+    fields:
+      - { label: "Order (controls display order, 1 = first)", name: "order", widget: "number", value_type: "int" }
+      - { label: "URL Slug (do not change)", name: "slug", widget: "string" }
+      - { label: "Service Name", name: "name", widget: "string" }
+      - { label: "Badge Tag (e.g. Most Popular, leave blank for none)", name: "tag", widget: "string", required: false }
+      - { label: "Hero Label (optional, overrides badge on detail page)", name: "heroLabel", widget: "string", required: false }
+      - { label: "Price (shown on card)", name: "price", widget: "string" }
+      - { label: "Volume/Info Label", name: "metaLabel", widget: "string" }
+      - { label: "Volume/Info Line 1", name: "metaLine1", widget: "string" }
+      - { label: "Volume/Info Line 2", name: "metaLine2", widget: "string" }
+      - { label: "Short Description", name: "desc", widget: "text" }
+      - { label: "Best For", name: "bestFor", widget: "string" }
+      - { label: "What's Included", name: "includes", widget: "list" }
+      - { label: "Detail Page Tagline", name: "tagline", widget: "string" }
+      - { label: "Price Label", name: "priceLabel", widget: "string" }
+      - { label: "Price Value", name: "priceValue", widget: "string" }
+      - { label: "Duration Label", name: "durationLabel", widget: "string" }
+      - { label: "Duration Value", name: "durationValue", widget: "string" }
+      - { label: "Maintenance Info", name: "maintenanceValue", widget: "text" }
+      - label: "Detail Page Sections"
+        name: "sections"
+        widget: "list"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - label: "Section Photo (optional)"
+            name: "img"
+            widget: "image"
+            required: false
+            media_folder: "/public/uploads/services"
+            public_folder: "/uploads/services"
+          - { label: "Section Text", name: "body", widget: "markdown" }
+
+  - name: "locations"
+    label: "Areas We Cover"
+    label_singular: "Area"
+    folder: "content/locations"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{name}}"
+    sortable_fields: ["order", "name"]
+    fields:
+      - { label: "Order (controls display order, 1 = first)", name: "order", widget: "number", value_type: "int" }
+      - { label: "Area Name", name: "name", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the page's web address, lowercase letters and dashes only." }
+      - { label: "Short Text (shown on the Areas We Cover page)", name: "cardText", widget: "text" }
+      - label: "Photo (optional)"
+        name: "img"
+        widget: "image"
+        required: false
+        media_folder: "/public/uploads/locations"
+        public_folder: "/uploads/locations"
+      - { label: "Full Page Content", name: "body", widget: "markdown" }
+
   - name: "blog"
     label: "Blog Articles"
     label_singular: "Article"

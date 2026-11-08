@@ -10,6 +10,7 @@ import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Contact from './pages/Contact';
 import Locations from './pages/Locations';
+import LocationDetail from './pages/LocationDetail';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 
@@ -33,6 +34,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/hair-extensions-london" element={<Locations />} />
+            <Route path="/hair-extensions-london/:slug" element={<LocationDetail />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
