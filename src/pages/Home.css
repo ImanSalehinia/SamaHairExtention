@@ -144,18 +144,6 @@
   max-width: 560px;
 }
 
-.luxe-hero__ring {
-  position: absolute;
-  top: 14%;
-  right: 8%;
-  width: 30%;
-  aspect-ratio: 1/1;
-  border: 2px solid #C5A16D;
-  border-radius: 50%;
-  opacity: 0.6;
-  z-index: 2;
-}
-
 .luxe-hero__script {
   position: absolute;
   top: 18%;
@@ -595,7 +583,6 @@
     background: linear-gradient(to right, #F8EEE7 0%, #F8EEE7 55%, rgba(248,238,231,0.5) 70%, rgba(248,238,231,0) 90%);
   }
 
-  .luxe-hero__ring,
   .luxe-hero__script {
     display: none;
   }

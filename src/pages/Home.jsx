@@ -159,7 +159,6 @@ export default function Home() {
               aria-label="Long, voluminous hair extensions by Sama"
             />
             <div className="luxe-hero__bg-fade" aria-hidden="true" />
-            <div className="luxe-hero__ring" aria-hidden="true" />
             <span className="luxe-hero__script">More Than Hair <span className="luxe-hero__script-heart">♡</span></span>
             <div className="luxe-hero__inner">
               <div className="luxe-hero__content">
