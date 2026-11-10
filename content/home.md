@@ -1,5 +1,5 @@
 ---
-heroImage: /uploads/home/56d05031e43e541e9489b2dad3277c7c.jpg
+heroImage: /uploads/home/hero.jpg
 heroEyebrow: Premium Hair Extensions in London
 heroTitleMain: Transform Your
 heroTitleHighlight: Hair, Transform You
