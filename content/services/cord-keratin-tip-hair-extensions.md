@@ -12,9 +12,9 @@ desc: Discover the next generation of keratin hair extensions. Cord Keratin Tip
   combines lightweight, discreet attachments with a time-saving maintenance
   system that preserves your original extension length without repeated cutting
   or re-capsuling.
-bestFor: "Best for: Clients who want the natural look of keratin extensions with
-  faster application, easier maintenance, and reusable extension lengths without
-  repeated re-tipping or re-capsuling."
+bestFor: Natural look of keratin extensions with faster application, easier
+  maintenance, and reusable extension lengths without repeated re-tipping or
+  re-capsuling.
 includes:
   - Personalised Hair Consultation Natural Hair Assessment Professional Cord
     Keratin Tip Application Customised Extension Placement Hair Blending & Final
