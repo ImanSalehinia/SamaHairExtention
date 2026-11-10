@@ -1,8 +1,8 @@
 ---
 heroImage: /uploads/home/hero.jpg
 heroEyebrow: Premium Hair Extensions in London
-heroTitleMain: Transform Your Hair,
-heroTitleHighlight: " Transform You"
+heroTitleMain: Yor Dream Hair
+heroTitleHighlight: Start Here
 heroSubtitle: 100% human hair extensions for a natural, seamless and beautiful look.
 aboutImage: /uploads/home/about-sama.jpg
 aboutBadgeYears: 3+
