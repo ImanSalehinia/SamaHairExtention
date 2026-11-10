@@ -48,7 +48,7 @@ sections:
 
 
       At Sama HairExtensions, we combine the elegance and comfort of keratin extensions with a smarter, more practical approach to hair extensions.
-    img: /uploads/services/images-1-.jpg
+    img: /uploads/services/f13fb8c809d322c6ac09b16de2e175ec.jpg
   - title: The Cord Keratin Tip Application Process
     body: >-
       
