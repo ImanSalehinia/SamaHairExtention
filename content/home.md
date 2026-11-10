@@ -1,5 +1,5 @@
 ---
-heroImage: /uploads/home/blonde-hair-studio-banner.png
+heroImage: /uploads/home/hero.jpg
 heroEyebrow: Premium Hair Extensions in London
 heroTitleMain: Transform Your
 heroTitleHighlight: Hair, Transform You
