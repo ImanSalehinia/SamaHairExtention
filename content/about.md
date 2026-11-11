@@ -53,7 +53,7 @@ balayageParagraph2: Whether you love subtle highlights, face-framing blonde
   extensions offer a versatile way to experiment with colour while keeping your
   natural hair colour untouched.
 balayageTagline: Your dream colour. No bleach needed. Just beautiful hair.
-qualityImage: /uploads/gallery/long-wavy-blonde-transformation.jpg
+qualityImage: /uploads/about/curly-caramel-hair-transformation.png
 qualityParagraph1: At Sama Hair Extensions, we believe that choosing the right
   method is just as important as choosing the desired length and colour.
 qualityParagraph2: We encourage clients to consider their natural hair
