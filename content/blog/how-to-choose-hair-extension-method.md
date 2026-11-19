@@ -1,11 +1,13 @@
 ---
-title: "How to Choose the Right Hair Extension Method"
-slug: "how-to-choose-hair-extension-method"
-category: "Extension Guides"
-date: "2026-12-13"
-readTime: "6 min read"
-excerpt: "From your natural hair type to your lifestyle and budget — here’s a practical framework for working out which hair extension method is actually right for you."
-img: "/uploads/gallery/wavy-brunette-transformation.jpg"
+title: How to Choose the Right Hair Extension Method
+slug: how-to-choose-hair-extension-method
+category: Extension Guides
+date: 2026-12-13
+readTime: 6 min read
+excerpt: From your natural hair type to your lifestyle and budget — here’s a
+  practical framework for working out which hair extension method is actually
+  right for you.
+img: /uploads/blog/hair-extension-styles-and-shades.png
 ---
 Choosing hair extensions is about more than simply picking a colour and length.
 
