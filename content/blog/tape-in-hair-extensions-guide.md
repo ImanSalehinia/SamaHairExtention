@@ -1,11 +1,12 @@
 ---
 title: "Tape In Hair Extensions: Everything You Need to Know"
-slug: "tape-in-hair-extensions-guide"
-category: "Extension Guides"
-date: "2026-11-23"
-readTime: "7 min read"
-excerpt: "Flat attachment points, quicker application and fuller-looking results — here’s everything to know about tape in extensions before you book."
-img: "/uploads/gallery/long-sleek-straight-brunette.jpg"
+slug: tape-in-hair-extensions-guide
+category: Extension Guides
+date: 2026-11-23
+readTime: 7 min read
+excerpt: Flat attachment points, quicker application and fuller-looking results
+  — here’s everything to know about tape in extensions before you book.
+img: /uploads/blog/seamless-blonde-tape-in-extension-application.png
 ---
 If you are looking for a way to add length and volume to your natural hair, tape in hair extensions may be an option worth considering.
 
