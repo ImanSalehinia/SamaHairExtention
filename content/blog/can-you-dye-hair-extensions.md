@@ -1,11 +1,13 @@
 ---
-title: "Can You Dye Hair Extensions? What You Need to Know"
-slug: "can-you-dye-hair-extensions"
-category: "Colour & Style"
-date: "2026-12-07"
-readTime: "6 min read"
-excerpt: "Thinking about colouring your hair extensions? Here’s what’s actually safe to do, the risks of bleaching, and why colour matching matters more than dyeing."
-img: "/uploads/gallery/caramel-balayage-waves.jpg"
+title: Can You Dye Hair Extensions? What You Need to Know
+slug: can-you-dye-hair-extensions
+category: Colour & Style
+date: 2026-12-07
+readTime: 6 min read
+excerpt: Thinking about colouring your hair extensions? Here’s what’s actually
+  safe to do, the risks of bleaching, and why colour matching matters more than
+  dyeing.
+img: /uploads/blog/balayage-blonde-in-the-salon.png
 ---
 If you wear hair extensions, you may eventually want to change their colour.
 
