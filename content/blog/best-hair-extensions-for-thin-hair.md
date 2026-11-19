@@ -1,11 +1,13 @@
 ---
 title: "Best Hair Extensions for Thin Hair: A Complete Guide"
-slug: "best-hair-extensions-for-thin-hair"
-category: "Extension Guides"
-date: "2026-11-11"
-readTime: "8 min read"
-excerpt: "Worried extensions won’t suit your fine or thin hair? Here’s what actually matters — method, weight and placement — before booking, plus what to avoid."
-img: "/uploads/gallery/closeup-microring.jpg"
+slug: best-hair-extensions-for-thin-hair
+category: Extension Guides
+date: 2026-11-11
+readTime: 8 min read
+excerpt: Worried extensions won’t suit your fine or thin hair? Here’s what
+  actually matters — method, weight and placement — before booking, plus what to
+  avoid.
+img: /uploads/blog/salon-hair-extensions-before-and-after.png
 ---
 If you have naturally thin or fine hair, you may have wondered whether hair extensions are suitable for you.
 
