@@ -1,11 +1,13 @@
 ---
-title: "How Often Should You Maintain Hair Extensions?"
-slug: "how-often-maintain-hair-extensions"
-category: "Hair Care Tips"
-date: "2026-11-25"
-readTime: "7 min read"
-excerpt: "Nano rings, micro rings and tape extensions each need maintenance on a different schedule — here’s what happens at each appointment and why it matters."
-img: "/uploads/gallery/keratin-bond-topdown-balayage.jpg"
+title: How Often Should You Maintain Hair Extensions?
+slug: how-often-maintain-hair-extensions
+category: Hair Care Tips
+date: 2026-10-25
+readTime: 7 min read
+excerpt: Nano rings, micro rings and tape extensions each need maintenance on a
+  different schedule — here’s what happens at each appointment and why it
+  matters.
+img: /uploads/blog/professional-blonde-hair-extension-application.png
 ---
 Hair extensions can look beautiful for months, but regular maintenance is essential to keep them comfortable, manageable and looking natural.
 
