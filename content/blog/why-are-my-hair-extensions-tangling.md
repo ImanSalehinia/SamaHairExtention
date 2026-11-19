@@ -1,11 +1,12 @@
 ---
-title: "Why Are My Hair Extensions Tangling? Causes and Solutions"
-slug: "why-are-my-hair-extensions-tangling"
-category: "Hair Care Tips"
-date: "2026-12-01"
-readTime: "7 min read"
-excerpt: "Dryness, incorrect brushing, delayed maintenance or sleeping with wet hair can all cause tangling — here’s how to spot the cause and fix it."
-img: "/uploads/gallery/keratin-bond-dense-rows.jpg"
+title: Why Are My Hair Extensions Tangling? Causes and Solutions
+slug: why-are-my-hair-extensions-tangling
+category: Hair Care Tips
+date: 2026-12-01
+readTime: 7 min read
+excerpt: Dryness, incorrect brushing, delayed maintenance or sleeping with wet
+  hair can all cause tangling — here’s how to spot the cause and fix it.
+img: /uploads/blog/tangled-to-sleek-hair-extensions.png
 ---
 Hair extensions should feel manageable and look smooth, but sometimes they become tangled, knotted or difficult to brush.
 
