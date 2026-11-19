@@ -1,11 +1,13 @@
 ---
-title: "How to Choose the Right Hair Extension Method"
-slug: "how-to-choose-the-right-hair-extension-method"
-category: "Extension Guides"
-date: "2026-11-01"
-readTime: "5 min read"
-excerpt: "Keratin bond, tape-in, micro ring, nano ring or clip-in — here’s how to work out which hair extension method actually suits your hair, lifestyle and goals."
-img: "/uploads/gallery/coldfusion-application.jpg"
+title: How to Choose the Right Hair Extension Method
+slug: how-to-choose-the-right-hair-extension-method
+category: Extension Guides
+date: 2026-11-01
+readTime: 5 min read
+excerpt: Keratin bond, tape-in, micro ring, nano ring or clip-in — here’s how to
+  work out which hair extension method actually suits your hair, lifestyle and
+  goals.
+img: /uploads/blog/hair-extension-styles-and-shades.png
 ---
 ## Start With Your Natural Hair
 
