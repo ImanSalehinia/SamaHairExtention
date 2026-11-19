@@ -7,7 +7,7 @@ readTime: 6 min read
 excerpt: Removing extensions incorrectly can damage your natural hair — here’s
   how professional removal works for nano ring and tape-in extensions, and what
   to do afterwards.
-img: /uploads/blog/at-home-blonde-extensions-setup.png
+img: /uploads/blog/golden-waves_-salon-hair-transformation-1.png
 ---
 Hair extensions can transform your hairstyle, but eventually they need to be removed, replaced or repositioned.
 
