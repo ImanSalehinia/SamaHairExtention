@@ -1,11 +1,12 @@
 ---
-title: "What Length Hair Extensions Should I Choose? Complete Guide"
-slug: "what-length-hair-extensions-should-i-choose"
-category: "Extension Guides"
-date: "2026-12-05"
-readTime: "6 min read"
-excerpt: "From 16 to 24 inches — here’s how to choose a length that blends naturally with your own hair and suits your lifestyle."
-img: "/uploads/gallery/long-blonde-waves-length.jpg"
+title: What Length Hair Extensions Should I Choose? Complete Guide
+slug: what-length-hair-extensions-should-i-choose
+category: Extension Guides
+date: 2026-12-05
+readTime: 6 min read
+excerpt: From 16 to 24 inches — here’s how to choose a length that blends
+  naturally with your own hair and suits your lifestyle.
+img: /uploads/blog/salon-hair-length-comparison-triptych.png
 ---
 Choosing the right hair extension length can completely change your final look.
 
