@@ -1,11 +1,13 @@
 ---
-title: "How Many Grams of Hair Extensions Do I Need?"
-slug: "how-many-grams-of-hair-extensions-do-i-need"
-category: "Extension Guides"
-date: "2026-12-11"
-readTime: "6 min read"
-excerpt: "Extension hair is sold by weight, but more grams doesn’t always mean better results — here’s how density, length and method affect how much you need."
-img: "/uploads/gallery/keratin-bond-square-section.jpg"
+title: How Many Grams of Hair Extensions Do I Need?
+slug: how-many-grams-of-hair-extensions-do-i-need
+category: Extension Guides
+date: 2026-12-11
+readTime: 6 min read
+excerpt: Extension hair is sold by weight, but more grams doesn’t always mean
+  better results — here’s how density, length and method affect how much you
+  need.
+img: /uploads/blog/luxurious-hair-extension-vanity-display.png
 ---
 If you are planning to get hair extensions, you may have noticed that extension hair is often sold by weight in grams.
 
