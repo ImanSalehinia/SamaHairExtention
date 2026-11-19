@@ -1,11 +1,12 @@
 ---
-title: "What to Expect at Your Free Hair Extension Consultation"
-slug: "what-to-expect-at-your-free-consultation"
-category: "Booking & Consultations"
-date: "2026-11-08"
-readTime: "3 min read"
-excerpt: "Never had a hair extension consultation before? Here’s exactly what happens at your free appointment, from hair assessment to colour matching."
-img: "/uploads/gallery/long-straight-transformation.jpg"
+title: What to Expect at Your Free Hair Extension Consultation
+slug: what-to-expect-at-your-free-consultation
+category: Booking & Consultations
+date: 2026-11-08
+readTime: 3 min read
+excerpt: Never had a hair extension consultation before? Here’s exactly what
+  happens at your free appointment, from hair assessment to colour matching.
+img: /uploads/blog/upscale-hair-color-consultation.png
 ---
 ## Assessing Your Natural Hair
 
