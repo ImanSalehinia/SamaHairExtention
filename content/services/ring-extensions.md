@@ -4,7 +4,7 @@ slug: ring-extensions
 name: Micro / Nano Ring Hair Extensions
 tag: ""
 heroLabel: ""
-price: Installation from £140
+price: Installation from £180
 metaLabel: Volume
 metaLine1: "Half Head: 50g"
 metaLine2: "Full Head: 100g"
@@ -20,7 +20,7 @@ includes:
   - Personalised aftercare guidance
 tagline: Seamless length and volume with discreet, individual strand extensions.
 priceLabel: Installation Price
-priceValue: From £140
+priceValue: From £180
 durationLabel: Application Time
 durationValue: Approximately 3–4 hours
 maintenanceValue: Typically every 8–10 weeks, depending on hair growth and individual needs.
