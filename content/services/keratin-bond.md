@@ -4,7 +4,7 @@ slug: keratin-bond
 name: Keratin Bond Hair Extensions
 tag: Most Popular
 heroLabel: ""
-price: Installation from £150
+price: Installation from £180
 metaLabel: Volume
 metaLine1: "Half Head: 50g"
 metaLine2: "Full Head: 100g"
@@ -20,7 +20,7 @@ includes:
 tagline: The perfect way to achieve natural-looking length, volume and beautiful
   movement.
 priceLabel: Installation Price
-priceValue: From £150
+priceValue: From £180
 durationLabel: Duration
 durationValue: Approximately 3–5 hours
 maintenanceValue: Typically every 3–4 months, depending on natural hair growth
