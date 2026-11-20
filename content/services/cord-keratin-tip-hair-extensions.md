@@ -22,7 +22,7 @@ includes:
 tagline: The Next Generation of Keratin Hair Extensions. Lightweight, discreet
   and designed to save time while preserving your original extension length.
 priceLabel: Installation Price
-priceValue: From £150
+priceValue: From £180
 durationLabel: Appointment Duration
 durationValue: Approximately 2–3 hours
 maintenanceValue: Typically every 3–4 months, depending on natural hair growth
