@@ -4,7 +4,7 @@ slug: cord-keratin-tip
 name: Cord Keratin Tip Hair Extensions
 tag: Signature Technique
 heroLabel: Sama's Signature Hair Extension Technique
-price: Installation from £150
+price: Installation from £180
 metaLabel: Hair Volume
 metaLine1: "Half Head: 50g"
 metaLine2: "Full Head: 100g"
