@@ -6,7 +6,7 @@ date: 2026-11-11
 readTime: 5 min read
 excerpt: Discover what Cord Tip hair extensions are, how they are fitted, how
   maintenance works and whether this method could be right for your hair.
-img: /uploads/blog/glossy-mauve-nail-and-hair-extension.png
+img: /uploads/blog/macro-hair-extension-bonding-detail.png
 ---
 # What Are Cord Tip Hair Extensions? Everything You Need to Know
 
