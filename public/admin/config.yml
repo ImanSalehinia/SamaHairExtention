@@ -164,6 +164,29 @@ collections:
             public_folder: "/uploads/services"
           - { label: "Section Text", name: "body", widget: "markdown" }
 
+  - name: "servicesFaq"
+    label: "Services – FAQ Section"
+    files:
+      - name: "servicesFaq"
+        label: "FAQ Content"
+        file: "content/servicesFaq.md"
+        fields:
+          - { label: "Small Label Above Title (e.g. Got Questions?)", name: "sectionLabel", widget: "string" }
+          - { label: "Title (plain part, e.g. Frequently)", name: "sectionTitleMain", widget: "string" }
+          - { label: "Title (gold highlighted part, e.g. Asked Questions)", name: "sectionTitleHighlight", widget: "string" }
+          - { label: "Intro Text", name: "intro", widget: "text" }
+          - label: "FAQ Categories (add, delete or reorder freely)"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Category Name", name: "category", widget: "string" }
+              - label: "Questions (add, delete or reorder freely)"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "q", widget: "string" }
+                  - { label: "Answer (use a blank line between paragraphs, or start a line with - for a bullet point)", name: "a", widget: "markdown" }
+
   - name: "locations"
     label: "Areas We Cover"
     label_singular: "Area"
