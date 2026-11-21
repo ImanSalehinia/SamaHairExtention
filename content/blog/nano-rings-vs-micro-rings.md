@@ -1,12 +1,13 @@
 ---
 title: "Nano Rings vs Micro Rings: What's the Difference?"
 order: 14
-slug: "nano-rings-vs-micro-rings"
-category: "Extension Guides"
-date: "2026-11-21"
-readTime: "6 min read"
-excerpt: "Nano rings and micro rings both use small individual attachments — here’s how they actually differ in size, appearance and maintenance."
-img: "/uploads/gallery/keratin-bond-sectioning-blonde.jpg"
+slug: nano-rings-vs-micro-rings
+category: Extension Guides
+date: 2026-11-21
+readTime: 6 min read
+excerpt: Nano rings and micro rings both use small individual attachments —
+  here’s how they actually differ in size, appearance and maintenance.
+img: /uploads/blog/nano-vs.-micro-ring-extensions.png
 ---
 When researching individual strand hair extensions, you may come across two popular methods: nano rings and micro rings.
 

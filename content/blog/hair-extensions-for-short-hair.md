@@ -1,12 +1,14 @@
 ---
 title: "Hair Extensions for Short Hair: Can You Get Longer Hair?"
 order: 5
-slug: "hair-extensions-for-short-hair"
-category: "Extension Guides"
-date: "2026-12-09"
-readTime: "6 min read"
-excerpt: "Short hair doesn’t rule out extensions — here’s what actually determines whether nano ring or tape in methods can blend naturally with your length."
-img: "/uploads/gallery/brunette-pixie-to-wavy.jpg"
+slug: hair-extensions-for-short-hair
+category: Extension Guides
+date: 2026-12-09
+readTime: 6 min read
+excerpt: Short hair doesn’t rule out extensions — here’s what actually
+  determines whether nano ring or tape in methods can blend naturally with your
+  length.
+img: /uploads/blog/keratin-extension-salon-still-life.png
 ---
 If you have short hair and dream of having longer, fuller locks, hair extensions may be an option worth exploring.
 

@@ -1,12 +1,13 @@
 ---
 title: "Mobile Hair Extensions in London: What to Expect"
 order: 2
-slug: "mobile-hair-extensions-london"
-category: "Booking & Consultations"
-date: "2026-12-15"
-readTime: "6 min read"
-excerpt: "Prefer having your hair extensions fitted at home? Here’s exactly how a mobile hair extension appointment in London works, from enquiry to aftercare."
-img: "/uploads/gallery/pixie-to-long-dark.jpg"
+slug: mobile-hair-extensions-london
+category: Booking & Consultations
+date: 2026-12-15
+readTime: 6 min read
+excerpt: Prefer having your hair extensions fitted at home? Here’s exactly how a
+  mobile hair extension appointment in London works, from enquiry to aftercare.
+img: /uploads/blog/at-home-blonde-extensions-setup.png
 ---
 Looking for hair extensions in London but prefer not to travel to a salon?
 

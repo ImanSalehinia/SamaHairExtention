@@ -1,12 +1,14 @@
 ---
 title: "Hair Extension Aftercare: Top Tips to Make Them Last"
 order: 23
-slug: "hair-extension-aftercare-top-tips"
-category: "Hair Care Tips"
-date: "2026-11-04"
-readTime: "4 min read"
-excerpt: "Proper aftercare is the difference between extensions that look beautiful for months and ones that need early maintenance. Here’s what actually helps."
-img: "/uploads/gallery/hairroot-tapein.jpg"
+slug: hair-extension-aftercare-top-tips
+category: Hair Care Tips
+date: 2026-11-04
+readTime: 4 min read
+excerpt: Proper aftercare is the difference between extensions that look
+  beautiful for months and ones that need early maintenance. Here’s what
+  actually helps.
+img: /uploads/blog/hair-extension-aftercare-still-life.png
 ---
 ## Brushing the Right Way
 

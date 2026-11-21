@@ -1,12 +1,14 @@
 ---
-title: "Do Hair Extensions Damage Your Natural Hair?"
 order: 17
-slug: "do-hair-extensions-damage-your-natural-hair"
-category: "Hair Care Tips"
-date: "2026-11-15"
-readTime: "7 min read"
-excerpt: "Hair extensions can contribute to damage if they’re incorrectly fitted, too heavy or poorly maintained — here’s how to recognise the warning signs and protect your natural hair."
-img: "/uploads/gallery/bonded-tips-fan.jpg"
+title: Do Hair Extensions Damage Your Natural Hair?
+slug: do-hair-extensions-damage-your-natural-hair
+category: Hair Care Tips
+date: 2026-11-15
+readTime: 7 min read
+excerpt: Hair extensions can contribute to damage if they’re incorrectly fitted,
+  too heavy or poorly maintained — here’s how to recognise the warning signs and
+  protect your natural hair.
+img: /uploads/blog/hair-extension-bonds-in-salon-detail.png
 ---
 One of the biggest concerns people have before getting hair extensions is whether they will damage their natural hair.
 

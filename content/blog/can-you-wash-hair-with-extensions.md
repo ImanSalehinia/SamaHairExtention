@@ -1,12 +1,14 @@
 ---
-title: "Can You Wash Your Hair with Extensions? Complete Guide"
 order: 11
-slug: "can-you-wash-hair-with-extensions"
-category: "Hair Care Tips"
-date: "2026-11-27"
-readTime: "7 min read"
-excerpt: "Yes, you can wash most hair extensions — here’s the correct step-by-step routine to avoid tangling, dryness and damage around attachment points."
-img: "/uploads/gallery/keratin-bond-process-collage.jpg"
+title: Can You Wash Your Hair with Extensions? Complete Guide
+slug: can-you-wash-hair-with-extensions
+category: Hair Care Tips
+date: 2026-10-27
+readTime: 7 min read
+excerpt: Yes, you can wash most hair extensions — here’s the correct
+  step-by-step routine to avoid tangling, dryness and damage around attachment
+  points.
+img: /uploads/blog/luxurious-spa-hair-wash.png
 ---
 One of the first things people wonder after getting hair extensions is whether they can wash their hair normally.
 

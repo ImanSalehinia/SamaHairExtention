@@ -1,12 +1,13 @@
 ---
 title: "Human Hair vs Synthetic Hair Extensions: Which Should You Choose?"
 order: 8
-slug: "human-hair-vs-synthetic-hair-extensions"
-category: "Extension Guides"
-date: "2026-12-03"
-readTime: "7 min read"
-excerpt: "Human hair and synthetic extensions differ in appearance, styling flexibility, maintenance and price — here’s how to choose between them."
-img: "/uploads/gallery/blonde-crimped-length.jpg"
+slug: human-hair-vs-synthetic-hair-extensions
+category: Extension Guides
+date: 2026-12-03
+readTime: 7 min read
+excerpt: Human hair and synthetic extensions differ in appearance, styling
+  flexibility, maintenance and price — here’s how to choose between them.
+img: /uploads/blog/blonde-hair-extensions_-human-vs-synthetic.png
 ---
 When shopping for hair extensions, one of the first decisions you need to make is whether to choose human hair or synthetic hair.
 

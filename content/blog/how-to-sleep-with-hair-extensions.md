@@ -1,12 +1,13 @@
 ---
-title: "How to Sleep with Hair Extensions Without Tangling"
 order: 10
-slug: "how-to-sleep-with-hair-extensions"
-category: "Hair Care Tips"
-date: "2026-11-29"
-readTime: "6 min read"
-excerpt: "A few simple nighttime habits can stop your extensions tangling overnight — here’s how to brush, dry and sleep with them properly."
-img: "/uploads/gallery/keratin-bond-curly-finish.jpg"
+title: How to Sleep with Hair Extensions Without Tangling
+slug: how-to-sleep-with-hair-extensions
+category: Hair Care Tips
+date: 2026-11-29
+readTime: 6 min read
+excerpt: A few simple nighttime habits can stop your extensions tangling
+  overnight — here’s how to brush, dry and sleep with them properly.
+img: /uploads/blog/peaceful-satin-bonnet-slumber.png
 ---
 Getting a good night's sleep should not mean waking up with tangled hair.
 

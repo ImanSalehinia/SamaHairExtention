@@ -8,7 +8,7 @@ readTime: 3 min read
 excerpt: Love the look of balayage and blonde highlights but want to avoid
   bleaching your natural hair? Extensions can create the effect without the
   chemical process.
-img: /uploads/blog/salon-hair-transformation_-frizz-to-defined-curls.png
+img: /uploads/blog/keratin-bond-balayage-salon-portrait.png
 ---
 ## How It Works
 
