@@ -1,5 +1,6 @@
 ---
 title: "Best Hair Extensions for Thin Hair: A Complete Guide"
+order: 19
 slug: "best-hair-extensions-for-thin-hair"
 category: "Extension Guides"
 date: "2026-11-11"

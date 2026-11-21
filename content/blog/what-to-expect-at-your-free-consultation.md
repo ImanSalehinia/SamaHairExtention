@@ -1,5 +1,6 @@
 ---
 title: "What to Expect at Your Free Hair Extension Consultation"
+order: 21
 slug: "what-to-expect-at-your-free-consultation"
 category: "Booking & Consultations"
 date: "2026-11-08"

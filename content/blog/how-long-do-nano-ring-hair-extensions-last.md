@@ -1,5 +1,6 @@
 ---
 title: "How Long Do Nano Ring Hair Extensions Last? A Complete Guide"
+order: 15
 slug: "how-long-do-nano-ring-hair-extensions-last"
 category: "Hair Care Tips"
 date: "2026-11-19"

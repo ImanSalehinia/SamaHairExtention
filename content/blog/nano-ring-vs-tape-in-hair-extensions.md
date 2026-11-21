@@ -1,5 +1,6 @@
 ---
 title: "Nano Ring vs Tape In Hair Extensions: Which Is Better for You?"
+order: 20
 slug: "nano-ring-vs-tape-in-hair-extensions"
 category: "Extension Guides"
 date: "2026-11-09"

@@ -1,5 +1,6 @@
 ---
 title: "How to Care for Hair Extensions: The Complete Aftercare Guide"
+order: 16
 slug: "how-to-care-for-hair-extensions-aftercare-guide"
 category: "Hair Care Tips"
 date: "2026-11-17"

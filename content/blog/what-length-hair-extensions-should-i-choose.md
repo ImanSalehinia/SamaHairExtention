@@ -1,5 +1,6 @@
 ---
 title: "What Length Hair Extensions Should I Choose? Complete Guide"
+order: 7
 slug: "what-length-hair-extensions-should-i-choose"
 category: "Extension Guides"
 date: "2026-12-05"

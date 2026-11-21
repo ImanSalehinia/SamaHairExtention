@@ -4,7 +4,7 @@ import { blogPosts } from '../data/blogPosts';
 import './Gallery.css';
 import './Blog.css';
 
-const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+const sortedPosts = [...blogPosts].sort((a, b) => a.order - b.order);
 
 export default function Blog() {
   return (

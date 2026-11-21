@@ -1,5 +1,6 @@
 ---
 title: "How Often Should You Maintain Hair Extensions?"
+order: 12
 slug: "how-often-maintain-hair-extensions"
 category: "Hair Care Tips"
 date: "2026-11-25"

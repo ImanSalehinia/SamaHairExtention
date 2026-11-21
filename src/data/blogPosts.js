@@ -7,4 +7,4 @@ export const blogPosts = Object.values(files)
     const { attributes, body } = fm(raw);
     return { ...attributes, body };
   })
-  .sort((a, b) => new Date(b.date) - new Date(a.date));
+  .sort((a, b) => a.order - b.order);

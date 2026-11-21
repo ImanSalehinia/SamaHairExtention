@@ -1,5 +1,6 @@
 ---
 title: "Human Hair vs Synthetic Hair Extensions: Which Should You Choose?"
+order: 8
 slug: "human-hair-vs-synthetic-hair-extensions"
 category: "Extension Guides"
 date: "2026-12-03"

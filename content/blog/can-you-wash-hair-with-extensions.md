@@ -1,5 +1,6 @@
 ---
 title: "Can You Wash Your Hair with Extensions? Complete Guide"
+order: 11
 slug: "can-you-wash-hair-with-extensions"
 category: "Hair Care Tips"
 date: "2026-11-27"

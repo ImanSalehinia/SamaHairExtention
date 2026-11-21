@@ -1,5 +1,6 @@
 ---
 title: "Why Are My Hair Extensions Tangling? Causes and Solutions"
+order: 9
 slug: "why-are-my-hair-extensions-tangling"
 category: "Hair Care Tips"
 date: "2026-12-01"

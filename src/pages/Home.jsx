@@ -88,7 +88,7 @@ const benefitsStrip = [
 const featureCards = homeContent.featureCards.map(c => ({ ...c, key: c.title }));
 const showcase = homeContent.recentWork;
 
-const latestBlogPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+const latestBlogPosts = [...blogPosts].sort((a, b) => a.order - b.order);
 
 export default function Home() {
   return (

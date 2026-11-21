@@ -1,5 +1,6 @@
 ---
 title: "Hair Extensions for Short Hair: Can You Get Longer Hair?"
+order: 5
 slug: "hair-extensions-for-short-hair"
 category: "Extension Guides"
 date: "2026-12-09"

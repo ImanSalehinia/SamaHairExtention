@@ -1,5 +1,6 @@
 ---
 title: "Can You Dye Hair Extensions? What You Need to Know"
+order: 6
 slug: "can-you-dye-hair-extensions"
 category: "Colour & Style"
 date: "2026-12-07"

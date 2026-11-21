@@ -1,5 +1,6 @@
 ---
 title: "How to Choose the Right Hair Extension Method"
+order: 3
 slug: "how-to-choose-hair-extension-method"
 category: "Extension Guides"
 date: "2026-12-13"

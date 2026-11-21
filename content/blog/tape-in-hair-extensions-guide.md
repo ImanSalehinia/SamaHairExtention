@@ -1,5 +1,6 @@
 ---
 title: "Tape In Hair Extensions: Everything You Need to Know"
+order: 13
 slug: "tape-in-hair-extensions-guide"
 category: "Extension Guides"
 date: "2026-11-23"

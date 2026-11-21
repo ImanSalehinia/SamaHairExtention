@@ -1,5 +1,6 @@
 ---
 title: "How to Sleep with Hair Extensions Without Tangling"
+order: 10
 slug: "how-to-sleep-with-hair-extensions"
 category: "Hair Care Tips"
 date: "2026-11-29"

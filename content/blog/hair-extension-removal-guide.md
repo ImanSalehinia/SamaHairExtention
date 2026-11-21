@@ -1,5 +1,6 @@
 ---
 title: "Hair Extension Removal: What You Need to Know"
+order: 1
 slug: "hair-extension-removal-guide"
 category: "Hair Care Tips"
 date: "2026-12-17"

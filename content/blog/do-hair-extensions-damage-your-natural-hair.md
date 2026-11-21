@@ -1,5 +1,6 @@
 ---
 title: "Do Hair Extensions Damage Your Natural Hair?"
+order: 17
 slug: "do-hair-extensions-damage-your-natural-hair"
 category: "Hair Care Tips"
 date: "2026-11-15"

@@ -1,5 +1,6 @@
 ---
 title: "Hair Extension Aftercare: Top Tips to Make Them Last"
+order: 23
 slug: "hair-extension-aftercare-top-tips"
 category: "Hair Care Tips"
 date: "2026-11-04"

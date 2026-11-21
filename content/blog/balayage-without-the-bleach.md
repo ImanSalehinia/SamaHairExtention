@@ -1,5 +1,6 @@
 ---
 title: "Balayage Without the Bleach: Using Extensions for Colour"
+order: 22
 slug: balayage-without-the-bleach
 category: Colour & Style
 date: 2026-11-06

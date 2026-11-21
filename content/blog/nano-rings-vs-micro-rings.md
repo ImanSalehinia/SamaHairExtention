@@ -1,5 +1,6 @@
 ---
 title: "Nano Rings vs Micro Rings: What's the Difference?"
+order: 14
 slug: "nano-rings-vs-micro-rings"
 category: "Extension Guides"
 date: "2026-11-21"

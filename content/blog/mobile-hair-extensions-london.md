@@ -1,5 +1,6 @@
 ---
 title: "Mobile Hair Extensions in London: What to Expect"
+order: 2
 slug: "mobile-hair-extensions-london"
 category: "Booking & Consultations"
 date: "2026-12-15"

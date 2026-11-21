@@ -1,5 +1,6 @@
 ---
 title: "How Many Grams of Hair Extensions Do I Need?"
+order: 4
 slug: "how-many-grams-of-hair-extensions-do-i-need"
 category: "Extension Guides"
 date: "2026-12-11"

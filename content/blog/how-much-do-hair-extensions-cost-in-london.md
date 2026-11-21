@@ -1,5 +1,6 @@
 ---
 title: "How Much Do Hair Extensions Cost in London? (2026 Guide)"
+order: 18
 slug: "how-much-do-hair-extensions-cost-in-london"
 category: "Prices & Appointments"
 date: "2026-11-13"

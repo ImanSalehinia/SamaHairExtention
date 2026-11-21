@@ -194,9 +194,10 @@ collections:
     create: true
     delete: true
     slug: "{{slug}}"
-    summary: "{{title}}"
-    sortable_fields: ["date", "title"]
+    summary: "{{order}} — {{title}}"
+    sortable_fields: ["order", "date", "title"]
     fields:
+      - { label: "Order (controls display order, 1 = first, 2 = second, etc.)", name: "order", widget: "number", value_type: "int", hint: "Set this number to control where the article appears. Change it on any post to move it up or down the list." }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the article's web address, e.g. my-article-title. Use lowercase letters, numbers and dashes only." }
       - label: "Category"
