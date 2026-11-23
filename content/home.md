@@ -18,12 +18,12 @@ aboutParagraph3: Whether you're looking for extra length, volume, or a complete
 featureCards:
   - label: OUR SERVICES
     title: Our Services
-    img: /uploads/gallery/wavy-blonde-finish.jpg
+    img: /uploads/home/professional-blonde-hair-extension-application.png
     ctaText: View Services
     ctaLink: /services
   - label: Book Free Consultation
     title: Consultation For Hair Extensions
-    img: /uploads/gallery/bonded-tips-fan.jpg
+    img: /uploads/home/upscale-hair-color-consultation.png
     ctaText: Book Now
     ctaLink: /Contact
   - label: REAL RESULTS
