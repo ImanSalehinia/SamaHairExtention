@@ -28,7 +28,7 @@ featureCards:
     ctaLink: /Contact
   - label: REAL RESULTS
     title: Real Results
-    img: /uploads/gallery/long-wavy-blonde-transformation.jpg
+    img: /uploads/home/56d05031e43e541e9489b2dad3277c7c.jpg
     ctaText: View Gallery
     ctaLink: /gallery
 recentWork:
