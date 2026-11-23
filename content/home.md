@@ -21,8 +21,8 @@ featureCards:
     img: /uploads/gallery/wavy-blonde-finish.jpg
     ctaText: View Services
     ctaLink: /services
-  - label: SHOP
-    title: Shop Hair Extensions
+  - label: Book Free Consultation
+    title: Consultation For Hair Extensions
     img: /uploads/gallery/bonded-tips-fan.jpg
     ctaText: Shop Now
     ctaLink: /services
