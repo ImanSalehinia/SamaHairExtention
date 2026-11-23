@@ -25,7 +25,7 @@ featureCards:
     title: Consultation For Hair Extensions
     img: /uploads/gallery/bonded-tips-fan.jpg
     ctaText: Book Now
-    ctaLink: /Book Now
+    ctaLink: /Contact
   - label: REAL RESULTS
     title: Real Results
     img: /uploads/gallery/long-wavy-blonde-transformation.jpg
