@@ -24,7 +24,7 @@ featureCards:
   - label: Book Free Consultation
     title: Consultation For Hair Extensions
     img: /uploads/gallery/bonded-tips-fan.jpg
-    ctaText: Shop Now
+    ctaText: Book Now
     ctaLink: /Book Now
   - label: REAL RESULTS
     title: Real Results
