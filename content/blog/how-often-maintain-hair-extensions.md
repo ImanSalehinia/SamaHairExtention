@@ -22,13 +22,13 @@ Let's look at the typical maintenance schedules.
 
 Different methods require different maintenance intervals.
 
-| Extension Method | Typical Maintenance |
-| --- | --- |
-| Nano rings | Every 8–12 weeks |
-| Micro rings | Around 8–12 weeks |
-| Tape extensions | Around 6–8 weeks |
+| Extension Method         | Typical Maintenance |
+| ------------------------ | ------------------- |
+| Keratin/Cord Keratin Tip | Every 8–12 weeks    |
+| Nano/Micro rings         | Around 8–12 weeks   |
+| Tape extensions          | Around 6–8 weeks    |
 
-These are general guidelines. Your stylist may recommend a different schedule.
+These are general guidelines. 
 
 ## Why Is Hair Extension Maintenance Important?
 
@@ -68,12 +68,12 @@ Your natural hair should also be checked and gently detangled.
 
 Leaving extensions for longer than recommended can lead to:
 
-- Tangling around attachment points.
-- Matting.
-- Visible attachments.
-- Loose or slipping extensions.
-- Uneven weight distribution.
-- Increased tension on natural hair.
+* Tangling around attachment points.
+* Matting.
+* Visible attachments.
+* Loose or slipping extensions.
+* Uneven weight distribution.
+* Increased tension on natural hair.
 
 If you notice discomfort or severe tangling, do not wait for your next scheduled appointment.
 
@@ -81,13 +81,13 @@ If you notice discomfort or severe tangling, do not wait for your next scheduled
 
 A good routine includes:
 
-- Gentle daily brushing.
-- Thorough drying after washing.
-- Suitable shampoo and conditioner.
-- Avoiding heavy oils near attachments.
-- Sleeping with dry hair.
-- Avoiding excessive pulling.
-- Following your stylist's recommendations.
+* Gentle daily brushing.
+* Thorough drying after washing.
+* Suitable shampoo and conditioner.
+* Avoiding heavy oils near attachments.
+* Sleeping with dry hair.
+* Avoiding excessive pulling.
+* Following your stylist's recommendations.
 
 ## When Should You Remove Hair Extensions Completely?
 
